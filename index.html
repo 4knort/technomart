@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,7..|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
   	<header class="main-header">
   		  <a class="main-header-logo" href="index.html">
   		    <img src="img/logo.svg" width="220" height="47" alt="Логотип Техномарта">
   	      </a>
-  	      <div>
+  	      <div class="search">
   	      	<img src="img/icon-search.svg">
   	      	<input type="button" name="search" value="Поиск">
   	      </div>
@@ -32,8 +35,8 @@ checkout.html">Оформить заказ</a></li>
 			</p>
 			<div class="contacts">
 				<img src="img/icon-phone.svg">
-				<a href="#">+7 (812) 555-05-55</a>
-				<p>
+				<a  href="#">+7 (812) 555-05-55</a>
+				<p class="address">
 					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 				</p>	
 			</div>
@@ -226,42 +229,41 @@ checkout.html">Оформить заказ</a></li>
   			</span>
   		</article>
   		<section class="cooperation">
-  			<h2>Компания "Техномарт"</h2>
-  			  <p>
+  			<h2 class="technomart-company">Компания "Техномарт"</h2>
+  			  <p class="slogan">
   			  	Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> 
   			  	строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
   			  </p>	
-              <p>
+              <p class="slogan">
                 Мы можем доставить ваш товар в самые отдаленные точки России!<br>
                 Техномарт работает со многими транспортными компаниями: 
   			  </p>
   			    <h2 class="visually-hidden">Сотрудничесво</h2>
   			 	 <ul class="cooperation-list">
-  			  		<li class="cooperation-list-item">Деловые линии</li>
-  			  		<li class="cooperation-list-item">Автотрейдинг</li>
-  			  		<li class="cooperation-list-item">ЖелДорЭкспедиция</li>
+  			  		<li class="cooperation-list-item"><img src="img/marker.png">Деловые линии</li>
+  			  		<li class="cooperation-list-item"><img src="img/marker.png">Автотрейдинг</li>
+  			  		<li class="cooperation-list-item"><img src="img/marker.png">ЖелДорЭкспедиция</li>
   			 	 </ul>
-              <a class="button" href="#">Подробнее о нас</a>
-              <h3>Контакты</h3>
-              <p>
+              <a class="about-us" href="#">Подробнее о компании</a>
+              <h3 class="contacts-maps">Контакты</h3>
+              <p class="office">
 				Вы можете забрать товар сами,<br>
 				заехав в наш офис:</p>
-				<!-- Здесь будет карта -->
 				<img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"><br>
-				<a href="mail.html">Заблудились? Напишите Нам!</a> 
+				<a class="about-us" href="mail.html">Заблудились? Напишите Нам!</a> 
   		</section>
         <footer class="main-footer">
         	<nav class="main-navigation">
   		  <a class="main-header-logo" href="index.html">
   		    <img src="img/logo.svg" width="220" height="47" alt="Логотип Техномарта">
   	      </a>
-			<div class="contacts">
-				<a href="#">+7 (812) 555-05-55</a>
+			<div class="contacts-footer">
 				<p>
 					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-				</p>	
+				</p>
+				<a class="contacts-footer" href="#">+7 (812) 555-05-55</a>	
 			</div>
-			<ul class="site-navigation">
+			<ul class="site-navigation-footer">
 				<li><a href="about.html">Компания</a></li>
 				<li><a href="news.html">Новости</a></li>
 				<li><a href="delivery.html">Доставка</a></li>
@@ -274,34 +276,36 @@ checkout.html">Оформить заказ</a></li>
   	    	<li"><a href="#">Инструмент</a></li>
   	    	<li"><a href="#">Спецпредложения</a></li>  	
   	    </ul>
-        <p>
+  	    <div class="last-footer">
+        <p class="copyrigh">
         	© 2010–2019 Компания «Техномарт»<br>
             Все права защищены
         </p>
         <div class="footer-social">	
     	  <ul>
-    	  <li>
+    	   <li>
     	  	<img src="img/vk-icon.svg" width="26" height="15" alt="логотип вконтакте">
-    	  	<a class="social-button" href="#">Вконтакте</a>
-    	  </li>
+    	  	<a class="social-button" href="#"></a>
+    	   </li>
     	  <li>
     	  	<img src="img/fb-icon.svg" width="12" height="22" alt="логотип фейсбука">
-    	  	<a class="social-button" href="#">Фейсбук</a>
+    	  	<a class="social-button" href="#"></a>
     	  </li>
     	  <li>
     	  	<img src="img/insta-icon.svg" width="21" height="21" alt="логотип Инстограма">
-    	  	<a class="social-button" href="#">Инстограмм</a>
+    	  	<a class="social-button" href="#"></a>
     	  </li>
     	  </ul>
     	</div>  
-        	<p>
-        		<h3>Обратная связь</h3>
+        	<p class="feedback">
+        		<span>Обратная связь</span>
         		<a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         	</p>
         	<p class="footer-copyright">
     	  <b>Разработано:</b>
     	  <a class="button" href="">HTML Academy</a>
     	</p>
+        </div>
         </footer>
   	</main>
   	  <div class="modal modal-login">
