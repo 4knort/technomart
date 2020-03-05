@@ -16,6 +16,12 @@ ul{
 .last-footer{
 	background-color: #293449;
 }
+
+.main-header-logo img:hover,
+.main-header-logo img:active{
+	background-color: #ca2c37;
+}
+
 .user-navigation a{
 	font-family: Cuprum;
 	font-size: 17px;

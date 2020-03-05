@@ -1,7 +1,7 @@
-/*body{
+body{
 	font-family: Cuprum, PT Sans, sans-serif;
 }
-*/
+
 
 .main-header{
 	background-color: #f3f7f8;;
@@ -21,12 +21,26 @@ ul{
 .last-footer{
 	background-color: #293449;
 }
+
+
+.main-header-logo img:hover{
+	background-color: #ca2c37;
+}
+
+.main-header-logo img:focus{
+	background-color: #ee3643;
+}
+
 .user-navigation a{
 	font-family: Cuprum;
 	font-size: 17px;
 	line-height: 18px;
-	color: #ffffff;
-	
+	color: #ffffff;	
+}
+
+.user-navigation a:active{
+	background-color: #161d29;
+
 }
 
 .tagline{
@@ -150,4 +164,118 @@ ul{
 
 .footer-copyright a{
 	color: #ffd180;
+}
+
+/*Временно для сетки*/
+
+
+.main-header{
+	display: flex;
+	min-height: 320px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-header-top{
+	display: flex;
+	width: 940px;
+	min-height: 42px;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #293449;
+
+}
+
+.user-navigation{
+	display: flex;
+	align-items: center;
+	width: 434px;
+	justify-content: space-around;
+	
+}
+
+.main-header-center{
+	display: flex;
+    min-height: 155px;
+    width: 888px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.acount-action-list{
+	display: flex;
+}
+
+.site-navigation{
+	display: flex;
+	min-height: 60px;
+	align-items: center;
+	width: 940px;
+	justify-content: space-around; 
+}
+
+.cooperation{
+	display: flex;
+	justify-content: space-around;
+}
+
+.main-footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.main-navigation{
+	display: flex;
+	min-height: 69px;
+	width: 940px;
+	justify-content:space-between;
+	align-items: center;
+}	
+
+.site-navigation-footer{
+	display: flex;
+	width: 547px;
+	justify-content: space-between;
+	
+}
+
+.navigation-wrapper{
+	display: flex;
+	width: 940px;
+	justify-content: space-between;
+
+}
+
+.navigation{
+	display: flex;
+	width: 523px;
+	justify-content: space-around;
+}
+
+.last-footer{
+	display: flex;
+	width: 940px;
+	min-height: 107px;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.footer-social{
+	display: flex;
+	width: 132px;
+	justify-content: space-around;
+
+}
+
+.feedback{
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-copyright{
+	display: flex;
+	flex-direction: column;
 }
