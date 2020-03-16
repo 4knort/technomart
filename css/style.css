@@ -178,10 +178,10 @@ ul{
 
 .main-header-top{
 	display: flex;
-	width: 940px;
+	width: 100%;
 	min-height: 42px;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	background-color: #293449;
 
 }
@@ -208,6 +208,7 @@ ul{
 
 .site-navigation{
 	display: flex;
+	flex-wrap: wrap;
 	min-height: 60px;
 	align-items: center;
 	width: 940px;
@@ -248,18 +249,29 @@ ul{
 
 }
 
-.navigation{
+.navigation {
 	display: flex;
+	flex-wrap: wrap;
 	width: 523px;
-	justify-content: space-around;
+	justify-content: space-between;
+	/*background-color:red*/;
 }
+
+/*.navigation a{
+	display: block;
+	padding-left: 60px;
+	flex-direction: row;
+
+}*/
 
 .last-footer{
 	display: flex;
-	width: 940px;
+	width: 100%;
 	min-height: 107px;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
+	
+
 
 }
 
