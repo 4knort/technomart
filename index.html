@@ -6,7 +6,61 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header class="main-header">
+      <nav class="main-navigation">
+
+        <section class="site-navigation-top">
+          <img src="img/index-logo.jpg" width="220"height="42" alt="ТЕХНОМАРТ">
+
+          <form class="search-form" action="index.html" method="post">
+            <label for="site-navigation-search" class="visually-hidden">Поиск</label>
+            <input id="site-navigation-search" type="text" name="search" value="" placeholder="Поиск">
+          </form>
+
+          <form class="" action="index.html" method="post">
+            <label for="site-navigation-bookmarks">Закладки:</label>
+            <input id="site-navigation-bookmarks" type="text" name="bookmarks" value="0">
+
+            <label for="site-navigation-basket">Корзина:</label>
+            <input id="site-navigation-basket" type="text" name="basket" value="0">
+
+            <button class="checkout" type="submit">Оформить заказ</button>
+          </form>
+        </section>
+
+        <section class="site-navigation-middle">
+          <div class="description">
+            <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          </div>
+
+          <div class="header-contacts">
+            <p>
+              +7 (812) 555-05-55<br>
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+          </div>
+
+          <ul class="user-navigation">
+            <li><a href="">Вход</a></li>
+            <li><a href="">Регистрация</a></li>
+            <li><a href="" class="log off">Мои заказы</a></li>
+            <li><a href="" class="log off">Личный кабинет</a></li>
+          </ul>
+        </section>
+
+        <section class="site-navigation-bottom">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Компания</a></li>
+            <li><a href="">Каталог</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Спецпредложения</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
 
   </body>
 </html>
