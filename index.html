@@ -18,15 +18,15 @@
         </form>
 
         <div class="site-navigation-tools">
-          <button class="bookmarks" type="button" name="button">
+          <button class="bookmarks" type="button" name="bookmarks">
             <a href="bookmarks.html">Закладки:</a>
           </button>
 
-          <button class="basket" type="button" name="button">
+          <button class="basket" type="button" name="basket">
             <a href="basket.html">Корзина:</a>
           </button>
 
-          <button class="checkout" type="button" name="button">
+          <button class="checkout" type="button" name="checkout">
             <a href="checkout.html">Оформить заказ</a>
           </button>
         </div>
@@ -46,12 +46,12 @@
 
         <div class="user-navigation">
           <div class="user-navigation-logoff">
-            <button><a class="login" href="#">Вход</a></button>
-            <button><a class="registration" href="#">Регистрация</a></button>
+            <button type="button"><a class="login" href="#">Вход</a></button>
+            <button type="button"><a class="registration" href="#">Регистрация</a></button>
           </div>
           <div class="user-navigation-authorized">
             <span class="user-name">Равшан Джамшутович</span>
-            <button><a class="logoff" href="#">Выйти</a></button>
+            <button type="button"><a class="logoff" href="#">Выйти</a></button>
             <a class="user-navigation-orders" href="#">Мои заказы</a>
             <a class="user-navigation-personal-area" href="#">Личный кабинет</a>
           </div>
@@ -114,14 +114,14 @@
                 <img src="img/slider-1.jpg" width="620" height="266" alt="slider-1">
                 <h3>ПЕРФОРАТОРЫ</h3>
                 <p>Настоящие мужские игрушки</p>
-                <button class="slider-button button" type="button" name="button">ОТКРЫТЬ КАТАЛОГ</button>
+                <button class="slider-button button" type="button" name="">ОТКРЫТЬ КАТАЛОГ</button>
               </div>
 
               <div class="slider-2">
                 <img src="img/slider-2.jpg" width="620" height="266" alt="slider-2">
                 <h3>ДРЕЛИ</h3>
                 <p>Соседям на радость!</p>
-                <button class="slider-button button" type="button" name="button">ОТКРЫТЬ КАТАЛОГ</button>
+                <button class="slider-button button" type="button" name="">ОТКРЫТЬ КАТАЛОГ</button>
               </div>
             </article>
           </li>
@@ -225,11 +225,11 @@
 
       <section class="services">
         <div class="services-info">
-        <h2>СЕРВИСЫ</h2>
-        <p>
-          Хороший интернет-магазин отличается от плохого не только ценами!<br>
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
+          <h2>СЕРВИСЫ</h2>
+          <p>
+            Хороший интернет-магазин отличается от плохого не только ценами!<br>
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
         </div>
 
         <div class="services-list">
@@ -247,7 +247,7 @@
         </div>
 
         <div class="services-delivery-info">
-            <h3>Доставка</h3>
+          <h3>Доставка</h3>
           <p>
             Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно!
@@ -258,7 +258,7 @@
         </div>
 
         <div class="services-guarantee-info">
-            <h3>Гарантия</h3>
+          <h3>Гарантия</h3>
           <p>
             Если купленный у нас товар поломается или заискрит,
             а также в случае пожара, спровоцированного его возгаранием,
@@ -271,7 +271,7 @@
         </div>
 
         <div class="services-credit-info">
-            <h3>Кредит</h3>
+          <h3>Кредит</h3>
           <p>
             Залезть в долговую яму стало проще!
             Кредитные консультанты придут вам на помощь.
@@ -395,8 +395,9 @@
           <label for="message">Текст письма</label>
           <input id="message" type="text" placeholder="В свободной форме">
         </p>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="button" type="submit">ОТПРАВИТЬ</button>
       </form>
+      <button class="modal-close" type="button">ЗАКРЫТЬ</button>
     </section>
 
     <section class="modal modal-map">
@@ -404,7 +405,7 @@
       <p>
         <img src="img/map.jpg" width="970" height="476" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </p>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button">ЗАКРЫТЬ</button>
     </section>
 
   </body>
