@@ -2,11 +2,411 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
+    <title>Техномарт</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header class="main-header">
+
+      <div class="header-top">
+        <a href="index.html" class="header-logo">ТЕХНОМАРТ</a>
+
+        <form class="search-form" action="index.html" method="post">
+          <label class="visually-hidden" for="site-navigation-search">Поиск</label>
+          <input class="search-icon" id="site-navigation-search"
+          type="text" name="search" value="" placeholder="Поиск">
+        </form>
+
+        <div class="site-navigation-tools">
+          <button class="bookmarks" type="button" name="bookmarks">
+            <a href="bookmarks.html">Закладки:</a>
+          </button>
+
+          <button class="basket" type="button" name="basket">
+            <a href="basket.html">Корзина:</a>
+          </button>
+
+          <button class="checkout" type="button" name="checkout">
+            <a href="checkout.html">Оформить заказ</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="header-middle">
+        <div class="description">
+          <b>Интернет-магазин строительных материалов и инструментов для ремонта</b>
+        </div>
+
+        <div class="header-contacts">
+          <p>
+            <span class="contact-phone">+7 (812) 555-05-55</span><br>
+            <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+          </p>
+        </div>
+
+        <div class="user-navigation">
+          <div class="user-navigation-logoff">
+            <button type="button"><a class="login" href="#">Вход</a></button>
+            <button type="button"><a class="registration" href="#">Регистрация</a></button>
+          </div>
+          <div class="user-navigation-authorized">
+            <span class="user-name">Равшан Джамшутович</span>
+            <button type="button"><a class="logoff" href="#">Выйти</a></button>
+            <a class="user-navigation-orders" href="#">Мои заказы</a>
+            <a class="user-navigation-personal-area" href="#">Личный кабинет</a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="header-bottom main-navigation">
+        <ul>
+          <li><a class="navigation-item" href="index.html">Главная</a></li>
+          <li><a class="navigation-item" href="company.html">Компания</a></li>
+          <li><a class="navigation-item" href="catalog.html">Каталог</a></li>
+          <li><a class="navigation-item" href="news.html">Новости</a></li>
+          <li><a class="navigation-item" href="offers.html">Спецпредложения</a></li>
+          <li><a class="navigation-item" href="delivery.html">Доставка</a></li>
+          <li><a class="navigation-item" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main class="container">
+
+      <section class="main-offers">
+      <h2 class="visually-hidden">Предложения</h2>
+        <ul>
+          <li class="offer-materials new">
+            <h3>Материалы</h3>
+            <a href="offers.html">
+              <p>НА ЛЮБОЙ ВКУС</p>
+            </a>
+          </li>
+          <li class="offer-tools">
+            <h3>Инструмент</h3>
+            <a href="offers.html">
+              <p>НА ВСЕ СЛУЧАИ</p>
+            </a>
+          </li>
+          <li class="offer-technics">
+            <h3>Техника</h3>
+            <a href="offers.html">
+              <p>ДЛЯ СТРОЙКИ</p>
+            </a>
+          </li>
+          <li class="offer-discounts">
+            <h3>Скидки 50%</h3>
+            <a href="offers.html">
+              <p>НА 350 ТОВАРОВ</p>
+            </a>
+          </li>
+          <li class="offer-delivery">
+            <h3>Доставка</h3>
+            <a href="delivery.html">
+              <p>БЕСПЛАТНО</p>
+            </a>
+          </li>
+
+          <li>
+            <article class="offer-slider">
+              <div class="slider-1">
+                <img src="img/slider-1.jpg" width="620" height="266" alt="slider-1">
+                <h3>ПЕРФОРАТОРЫ</h3>
+                <p>Настоящие мужские игрушки</p>
+                <button class="slider-button button" type="button" name="">ОТКРЫТЬ КАТАЛОГ</button>
+              </div>
+
+              <div class="slider-2">
+                <img src="img/slider-2.jpg" width="620" height="266" alt="slider-2">
+                <h3>ДРЕЛИ</h3>
+                <p>Соседям на радость!</p>
+                <button class="slider-button button" type="button" name="">ОТКРЫТЬ КАТАЛОГ</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section class="popular-products">
+        <div class="popular-products-title">
+          <h2>ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
+          <a class="button" href="catalog.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+        </div>
+
+        <div class="popular-products-list">
+            <article class="catalog-product">
+              <div class="actions">
+                <a class="buy" href="#">КУПИТЬ</a>
+                <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+              </div>
+              <div class="catalog.product-image">
+                <img src="img/product-1.jpg" width="218" height="148" alt="">
+              </div>
+                <h3 class="catalog-product-title">Перфоратор BOSCH BFG 9000</h3>
+                <span class="catalog-product-discount">32500 Р.</span>
+                <span class="catalog-product-price">25500 Р.</span>
+            </article>
+
+            <article class="catalog-product">
+              <div class="actions">
+                <a class="buy" href="#">КУПИТЬ</a>
+                <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+              </div>
+              <div class="catalog.product-image">
+                <img src="img/product-2.jpg" width="218" height="148" alt="">
+              </div>
+                <h3 class="catalog-product-title">Перфоратор BOSCH BFG 3000</h3>
+                <span class="catalog-product-discount">22500 Р.</span>
+                <span class="catalog-product-price">15500 Р.</span>
+            </article>
+
+            <article class="catalog-product">
+              <div class="actions">
+                <a class="buy" href="#">КУПИТЬ</a>
+                <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+              </div>
+              <div class="catalog.product-image">
+                <img src="img/product-3.jpg" width="218" height="148" alt="">
+              </div>
+                <h3 class="catalog-product-title">Перфоратор BOSCH BFG 6000</h3>
+                <span class="catalog-product-discount">30500 Р.</span>
+                <span class="catalog-product-price">25500 Р.</span>
+            </article>
+
+            <article class="catalog-product new">
+              <div class="actions">
+                <a class="buy" href="#">КУПИТЬ</a>
+                <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+              </div>
+              <div class="catalog.product-image">
+                <img src="img/product-4.jpg" width="218" height="148" alt="">
+              </div>
+                <h3 class="catalog-product-title">Перфоратор BOSCH BFG 2000</h3>
+                <span class="catalog-product-discount"></span>
+                <span class="catalog-product-price">12500 Р.</span>
+            </article>
+        </div>
+      </section>
+
+      <section class="popular-brands">
+        <div class="popular-brands-title">
+          <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h2>
+          <a class="button" href="brands.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+        </div>
+
+        <div class="popular-brands-list">
+          <a class="bosch" href="#">
+            <img src="img/bosch.png" width="126" height="37" alt="BOSCH">
+          </a>
+          <a class="makita" href="#">
+            <img src="img/makita.png" width="123" height="40" alt="Makita">
+          </a>
+          <a class="dewalt" href="#">
+            <img src="img/dewalt.png" width="146" height="44" alt="DeWALT">
+          </a>
+          <a class="interscol" href="#">
+            <img src="img/interscol.png" width="184" height="32" alt="ИНТЕРСКОЛ">
+          </a>
+          <a class="hitachi" href="#">
+            <img src="img/hitachi.png" width="169" height="31" alt="HITACHI">
+          </a>
+          <a class="lg" href="#">
+            <img src="img/lg.png" width="121" height="73" alt="LG">
+          </a>
+          <a class="aeg" href="#">
+            <img src="img/aeg.png" width="151" height="96" alt="AEG">
+          </a>
+          <a class="metabo" href="#">
+            <img src="img/metabo.png" width="204" height="69" alt="Metabo">
+          </a>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="services-info">
+          <h2>СЕРВИСЫ</h2>
+          <p>
+            Хороший интернет-магазин отличается от плохого не только ценами!<br>
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
+        </div>
+
+        <div class="services-list">
+          <ul>
+            <li class="services-delivery services-list-current">
+              <h3>Доставка</h3>
+            </li>
+            <li class="services-guarantee">
+              <h3>Гарантия</h3>
+            </li>
+            <li class="services-credit">
+              <h3>Кредит</h3>
+            </li>
+          </ul>
+        </div>
+
+        <div class="services-delivery-info">
+          <h3>Доставка</h3>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо
+            к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем,
+            поднимая его на ваш этаж!
+          </p>
+          <img src="img/delivery.png" width="468" height="261" alt="delivery">
+        </div>
+
+        <div class="services-guarantee-info">
+          <h3>Гарантия</h3>
+          <p>
+            Если купленный у нас товар поломается или заискрит,
+            а также в случае пожара, спровоцированного его возгаранием,
+            вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+            сгоревший товар на новый.
+            Дом уж восстановите как-нибудь сами.
+          </p>
+          <a class="services-guarantee-button button" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+          <img src="img/guarantee.png" width="389" height="283" alt="guarantee">
+        </div>
+
+        <div class="services-credit-info">
+          <h3>Кредит</h3>
+          <p>
+            Залезть в долговую яму стало проще!
+            Кредитные консультанты придут вам на помощь.
+          </p>
+          <img src="img/credit.png" width="465" height="285" alt="credit">
+        </div>
+      </section>
+
+      <section class="information">
+        <div class="information-about-us">
+          <h3>КОМПАНИЯ «ТЕХНОМАРТ»</h3>
+          <p>
+            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
+            строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+          </p>
+          <p>
+            Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+            Техномарт работает со многими транспортными компаниями:
+          </p>
+
+          <ul>
+            <li class="business-line">Деловые линии</li>
+            <li class="auto-trading">Автотрейдин</li>
+            <li class="zheldorexpedition">ЖелДорЭкспедиция</li>
+          </ul>
+
+          <a class="more-about-us button" href="company.html">ПОДРОБНЕЕ О КОМПАНИИ</a>
+        </div>
+
+        <div class="information-contacts">
+          <h3>КОНТАКТЫ</h3>
+          <p>
+            Вы можете забрать товар сами,<br>
+            заехав в наш офис:
+          </p>
+
+          <a class="mini-map" href="#">
+            <img src="img/mini-map.jpg" width="300" height="158" alt="mini-map">
+          </a>
+
+          <a class="write-us button" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo">ТЕХНОМАРТ</a>
+
+        <div class="footer-contacts">
+          <p>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            +7 (812) 555-05-55
+          </p>
+        </div>
+
+        <div class="footer-navigation">
+          <div class="footer-navigation-top">
+            <ul>
+              <li><a class="footer-navigation-item" href="company.html">Компания</a></li>
+              <li><a class="footer-navigation-item" href="news.html">Новости</a></li>
+              <li><a class="footer-navigation-item" href="catalog.html">Каталог</a></li>
+              <li><a class="footer-navigation-item" href="delivery.html">Доставка</a></li>
+              <li><a class="footer-navigation-item" href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-navigation-bottom">
+            <ul>
+              <li><a class="footer-navigation-item text-color" href="materials.html">Материалы</a></li>
+              <li><a class="footer-navigation-item text-color" href="technics.html">Техника</a></li>
+              <li><a class="footer-navigation-item text-color" href="tools.html">Инструмент</a></li>
+              <li><a class="footer-navigation-item text-color" href="offers.html">Спецпредложения</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright-technomart">
+          <p>
+            © 2010–2017 Компания «Техномарт»<br>
+            Все права защищены
+          </p>
+        </div>
+
+        <div class="footer-social">
+          <ul>
+            <li><a class="footer-social-vk" href="#">Вконтакте</a></li>
+            <li><a class="footer-social-facebook" href="#">Фэйсбук</a></li>
+            <li><a class="footer-social-instagram" href="#">Инстаграм</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-copyright-htmlacademy">
+          <p>Обратная связь:<br>
+            <span class="text-color">mail@htmlacademy.ru</span>
+          </p>
+          <p>Разработано —<br>
+            <span class="text-color">htmlacademy.ru</span>
+          </p>
+        </div>
+      </div>
+
+    </footer>
+
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form class="modal-write-us" action="index.html" method="post">
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input id="name" type="text" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p>
+          <label for="email">Ваш e-mail:</label>
+          <input id="email" type="text" placeholder="Для отправки ответа">
+        </p>
+        <p>
+          <label for="message">Текст письма</label>
+          <input id="message" type="text" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="submit">ОТПРАВИТЬ</button>
+      </form>
+      <button class="modal-close" type="button">ЗАКРЫТЬ</button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="970" height="476" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      </p>
+      <button class="modal-close" type="button">ЗАКРЫТЬ</button>
+    </section>
 
   </body>
 </html>
