@@ -388,3 +388,32 @@ a.checkout:active {
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
   opacity: 0.3;
 }
+
+/* СЕРВИСЫ */
+.services-info h2 {
+  color: #000000;
+}
+
+.services-list {
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+  list-style: none;
+
+  background-color: #32425c;
+}
+
+.services-list h3:focus,
+.services-list h3:active {
+  color: #32425c;
+
+  background-color: #ffffff;
+}
+
+.services-delivery-info h3,
+.services-guarantee-info h3,
+.services-credit-info h3 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+}
