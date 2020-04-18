@@ -200,3 +200,50 @@ a.checkout:active {
 .main-navigation a:active {
   background-color: #1d2739;
 }
+
+/* Предложения */
+.main-offers {
+  list-style: none;
+}
+
+.main-offers h3{
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.main-offers p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: rgba(0,0,0,0.1);
+}
+
+.offer-materials {
+  background-color: #ffbf47;
+}
+
+.offer-tools {
+  background-color: #3bbce3;
+}
+
+.offer-technics {
+  background-color: #dc91d8;
+}
+
+.offer-discounts {
+  background-color: #8ed78f;
+}
+
+.offer-delivery {
+  background-color: #ffc047;
+}
+
+a.button {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
