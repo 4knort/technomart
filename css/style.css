@@ -135,6 +135,7 @@ a.checkout:active {
 .registration {
   font-size: 21px;
   line-height: 21px;
+  color: #000000;
 
   background-color: #ffffff;
 }
@@ -154,6 +155,7 @@ a.checkout:active {
 .user-name {
   font-size: 21px;
   line-height: 21px;
+  color: #000000;
 
   background-color: #ffffff;
 }
@@ -166,6 +168,7 @@ a.checkout:active {
 .user-navigation-personal-area {
   font-size: 16px;
   line-height: 18px;
+  color: #32425c;
   text-decoration: underline;
 }
 
@@ -390,24 +393,24 @@ a.checkout:active {
 }
 
 /* СЕРВИСЫ */
+.services {
+  background-color: #f3f7f9;
+  background-image: url(../img/bg-texture.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
 .services-info h2 {
   color: #000000;
 }
 
-.services-list {
+.services-list ul {
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
   list-style: none;
 
   background-color: #32425c;
-}
-
-.services-list h3:focus,
-.services-list h3:active {
-  color: #32425c;
-
-  background-color: #ffffff;
 }
 
 .services-delivery-info h3,
@@ -428,4 +431,92 @@ a.checkout:active {
   font-size: 18px;
   line-height: 20px;
   list-style: none;
+}
+
+/* Подвал */
+.footer-top {
+  background-color: #32425c;
+}
+
+.footer-logo {
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border-bottom: 5px solid #b72f38;
+}
+
+.footer-contacts {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.footer-navigation ul {
+  list-style: none;
+}
+
+.footer-navigation-item {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.footer-navigation-item:hover,
+.footer-navigation-item:focus {
+  text-decoration: underline;
+}
+
+.footer-navigation-item:active {
+  opacity: 0.5;
+}
+
+.text-color {
+  color: #ffd180;
+}
+
+.footer-bottom {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.footer-bottom ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.footer-copyright-htmlacademy span:hover,
+.footer-copyright-htmlacademy span:focus {
+  text-decoration: underline;
+}
+
+.footer-copyright-htmlacademy span:active {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+/* МОДАЛЬНЫЕ ОКНА */
+.modal {
+  color: #000000;
+
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.modal-write-us {
+  font-size: 18px;
+  line-height: 18px;
+  border-top: 7px solid #ff5357;
+}
+
+.input-modal {
+  font-size: 13px;
+  line-height: 18px;
 }
