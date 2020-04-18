@@ -1,0 +1,202 @@
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header {
+  background-color: #f2f6f8;
+}
+
+.header-top {
+  background-color: #293449;
+}
+
+.header-logo {
+  font-size: 24px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+a.header-logo:hover,
+a.header-logo:focus {
+  background-color: #ca2c37;
+}
+
+a.header-logo:active {
+  background-color: #ba2732;
+}
+
+.input-search {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.input-search:hover {
+  background-color: #212a3a;
+}
+
+.input-search:focus,
+.input-search:active {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation-tools a {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.site-navigation-tools a:hover,
+.site-navigation-tools a:focus {
+  background-color: #212a3a;
+}
+
+.site-navigation-tools a:active {
+  background-color: #161d29;
+}
+
+a.checkout {
+  background-color: #63a63e;
+}
+
+a.checkout:hover,
+a.checkout:focus {
+  background-color: #5fbb2d;
+}
+
+a.checkout:active {
+  background-color: #518534;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.header-contacts {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.contact-phone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.login,
+.registration {
+  font-size: 21px;
+  line-height: 21px;
+
+  background-color: #ffffff;
+}
+
+.login:hover,
+.registration:hover,
+.login:focus,
+.registration:focus {
+  color: #ee3643;
+}
+
+.login:active,
+.registration:active {
+  color: rgba(0,0,0,0.3);
+}
+
+.user-name {
+  font-size: 21px;
+  line-height: 21px;
+
+  background-color: #ffffff;
+}
+
+.user-name:active {
+  color: rgba(0,0,0,0.3);
+}
+
+.user-navigation-orders,
+.user-navigation-personal-area {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.user-navigation-orders:hover,
+.user-navigation-personal-area:hover,
+.user-navigation-orders:focus,
+.user-navigation-personal-area:focus {
+  color: #ee3643;
+  text-decoration: underline;
+}
+
+.user-navigation-orders:active,
+.user-navigation-personal-area:active {
+  color: rgba(50,66,92,0.3);
+  text-decoration: underline;
+}
+
+.main-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
+  background-color: #32425c;
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #ffffff;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  background-color: #293449;
+}
+
+.main-navigation a:active,
+.main-navigation a:active {
+  background-color: #1d2739;
+}

@@ -3,36 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="main-header">
 
       <div class="header-top">
-        <a href="index.html" class="header-logo">ТЕХНОМАРТ</a>
+        <div class="header-top-wrapper">
+          <a class="header-logo" href="index.html">ТЕХНОМАРТ</a>
 
-        <form class="search-form" action="index.html" method="post">
-          <label class="visually-hidden" for="site-navigation-search">Поиск</label>
-          <input class="search-icon" id="site-navigation-search"
-          type="text" name="search" value="" placeholder="Поиск">
-        </form>
+          <form class="search-form" action="index.html" method="post">
+            <label class="visually-hidden" for="site-navigation-search">Поиск</label>
+            <input class="input-search" id="site-navigation-search"
+            type="text" name="search" value="" placeholder="Поиск:">
+          </form>
 
-        <div class="site-navigation-tools">
-          <button class="bookmarks" type="button" name="bookmarks">
-            <a href="bookmarks.html">Закладки:</a>
-          </button>
-
-          <button class="basket" type="button" name="basket">
-            <a href="basket.html">Корзина:</a>
-          </button>
-
-          <button class="checkout" type="button" name="checkout">
-            <a href="checkout.html">Оформить заказ</a>
-          </button>
+          <div class="site-navigation-tools">
+              <a class="bookmarks" href="bookmarks.html">Закладки: 0</a>
+              <a class="basket" href="basket.html">Корзина: 0</a>
+              <a class="checkout" href="checkout.html">Оформить заказ</a>
+          </div>
         </div>
       </div>
 
-      <div class="header-middle">
+      <div class="header-middle container">
         <div class="description">
           <b>Интернет-магазин строительных материалов и инструментов для ремонта</b>
         </div>
@@ -46,20 +43,20 @@
 
         <div class="user-navigation">
           <div class="user-navigation-logoff">
-            <button type="button"><a class="login" href="#">Вход</a></button>
-            <button type="button"><a class="registration" href="#">Регистрация</a></button>
+            <a class="login" href="#">Вход</a>
+            <a class="registration" href="#">Регистрация</a>
           </div>
           <div class="user-navigation-authorized">
             <span class="user-name">Равшан Джамшутович</span>
-            <button type="button"><a class="logoff" href="#">Выйти</a></button>
+            <a class="logoff" href="#">Выйти</a>
             <a class="user-navigation-orders" href="#">Мои заказы</a>
             <a class="user-navigation-personal-area" href="#">Личный кабинет</a>
           </div>
         </div>
       </div>
 
-      <nav class="header-bottom main-navigation">
-        <ul>
+      <nav class="header-bottom container">
+        <ul class="main-navigation">
           <li><a class="navigation-item" href="index.html">Главная</a></li>
           <li><a class="navigation-item" href="company.html">Компания</a></li>
           <li><a class="navigation-item" href="catalog.html">Каталог</a></li>
@@ -306,7 +303,7 @@
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
 
       <div class="footer-top">
         <a href="index.html" class="footer-logo">ТЕХНОМАРТ</a>
