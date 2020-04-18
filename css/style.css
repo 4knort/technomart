@@ -64,6 +64,7 @@ a.header-logo:active {
 }
 
 .input-search {
+  font: inherit;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -254,20 +255,33 @@ a.checkout:active {
   background-color: #ffc047;
 }
 
-a.button {
+.offer-slider p,
+.offer-slider p:hover,
+.offer-slider p:focus,
+.offer-slider p:active {
+  background-color: transparent;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  vertical-align: middle;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
 
   background-color: #ee3643;
+  border: none;
+  border-radius: 2px;
 }
 
-a.button:hover,
-a.button:focus {
+.button:hover,
+.button:focus {
   background-color: #ca2c37;
 }
 
-a.button:active {
+.button:active {
   background-color: #ba2732;
 }
 
@@ -303,6 +317,7 @@ a.button:active {
 
   background-color: #63a63e;
   border-bottom: 3px solid #377416;
+  border-radius: 2px;
 }
 
 .buy:hover,
@@ -322,6 +337,7 @@ a.button:active {
   color: #32425c;
 
   border: 3px solid #63a63e;
+  border-radius: 2px;
 }
 
 .in-bookmarks:hover,
@@ -356,4 +372,19 @@ a.button:active {
   color: #ffffff;
 
   background-color: #ee3643;
+}
+
+/* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ */
+.popular-brands-list {
+  border: 1px solid #eaeaea;
+}
+
+.popular-brands-list a:hover,
+.popular-brands-list a:focus {
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.popular-brands-list a:active {
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  opacity: 0.3;
 }
