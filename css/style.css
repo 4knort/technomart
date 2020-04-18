@@ -35,7 +35,10 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  background-color: #f2f6f8;
+  background-color: #f3f7f9;
+  background-image: url(../img/bg-texture.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
 }
 
 .header-top {
@@ -48,6 +51,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   background-color: #ee3643;
+  border-bottom: 5px solid #b72f38;
 }
 
 a.header-logo:hover,
@@ -184,6 +188,7 @@ a.checkout:active {
   color: #ffffff;
 
   background-color: #32425c;
+  border-bottom: 5px solid #293449;
   list-style: none;
 }
 
@@ -201,7 +206,7 @@ a.checkout:active {
   background-color: #1d2739;
 }
 
-/* Предложения */
+/* ПРЕДЛОЖЕНИЯ */
 .main-offers {
   list-style: none;
 }
@@ -218,6 +223,15 @@ a.checkout:active {
   color: #ffffff;
 
   background-color: rgba(0,0,0,0.1);
+}
+
+.main-offers p:hover,
+.main-offers p:focus {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.main-offers p:active {
+  background-color: rgba(0,0,0,0.3);
 }
 
 .offer-materials {
@@ -242,6 +256,102 @@ a.checkout:active {
 
 a.button {
   font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+a.button:hover,
+a.button:focus {
+  background-color: #ca2c37;
+}
+
+a.button:active {
+  background-color: #ba2732;
+}
+
+/* ПОПУЛЯРНЫЕ ТОВАРЫ */
+.popular-products h2,
+.popular-brands, h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+}
+
+.popular-products-title,
+.popular-brands-title {
+  background-color: #f3f7f9;
+  background-image: url(../img/bg-texture.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.catalog-product {
+  border: 1px solid #eaeaea;
+}
+
+.catalog-product:hover,
+.catalog-product:focus {
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.buy {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #63a63e;
+  border-bottom: 3px solid #377416;
+}
+
+.buy:hover,
+.buy:focus {
+  background-color: #5fbb2d;
+  border-bottom: 3px solid #367315;
+}
+
+.buy:active {
+  background-color: #5fbb2d;
+  border-bottom: 3px solid #5fbb2d;
+}
+
+.in-bookmarks {
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+
+  border: 3px solid #63a63e;
+}
+
+.in-bookmarks:hover,
+.in-bookmarks:focus {
+  color: #32425c;
+
+  border: 3px solid #32425c;
+}
+
+.in-bookmarks:active {
+  color: #32425c;
+
+  border: 3px solid #32425c;
+  opacity: 0.3;
+}
+
+.catalog-product-title {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.catalog-product-discount {
+  font-size: 17px;
+  line-height: 18px;
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.catalog-product-price {
+  font-size: 17px;
   line-height: 18px;
   color: #ffffff;
 
