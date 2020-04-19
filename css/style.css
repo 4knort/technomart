@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden:not(:focus):not(:active),
+/* .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
@@ -32,9 +32,13 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
-.main-header {
+.main-header,
+.popular-products-title,
+.popular-brands-title,
+.services,
+.breadcrumbs + h2 {
   background-color: #f3f7f9;
   background-image: url(../img/bg-texture.jpg);
   background-position: 0 0;
@@ -152,6 +156,10 @@ a.checkout:active {
   color: rgba(0,0,0,0.3);
 }
 
+.user-navigation-authorized a {
+  color: #000000;
+}
+
 .user-name {
   font-size: 21px;
   line-height: 21px;
@@ -208,6 +216,14 @@ a.checkout:active {
 .main-navigation a:active,
 .main-navigation a:active {
   background-color: #1d2739;
+}
+
+/* ХЛЕБНЫЕ КРОШКИ */
+.breadcrumbs {
+  font-size: 13px;
+  line-height: 18px;
+
+  list-style: none;
 }
 
 /* ПРЕДЛОЖЕНИЯ */
@@ -296,14 +312,6 @@ a.checkout:active {
   color: #32425c;
 }
 
-.popular-products-title,
-.popular-brands-title {
-  background-color: #f3f7f9;
-  background-image: url(../img/bg-texture.jpg);
-  background-position: 0 0;
-  background-repeat: repeat;
-}
-
 .catalog-product {
   border: 1px solid #eaeaea;
 }
@@ -377,6 +385,83 @@ a.checkout:active {
   background-color: #ee3643;
 }
 
+/* КАТАЛОГ */
+.aside-filter h3,
+.sort h3,
+.sort {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.brands,
+.power-supply {
+  list-style: none;
+}
+
+.filter-option:disabled {
+  opacity: 0.4;
+}
+
+.sort-item,
+.up-dir,
+.down-dir {
+  opacity: 0.3;
+}
+
+.sort-item {
+  text-decoration: underline dotted red;
+}
+
+.sort-item:hover,
+.sort-item:focus {
+  opacity: 1;
+  text-decoration: underline red;
+}
+
+.up-dir:hover,
+.down-dir:hover,
+.up-dir:focus,
+.down-dir:focus {
+  opacity: 1;
+}
+
+.sort-item:active,
+.up-dir:active,
+.down-dir:active {
+  opacity: 1;
+  color: red;
+  text-decoration: none;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+.pagination-item a {
+  color: #000000;
+}
+
+.pagination-item:hover,
+.pagination-item:focus {
+  border-color: #bdc6ca;
+}
+
+.pagination-item:active {
+  border-color: #ee3643;
+}
+
+.pagination-item-current {
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border-color: #ee3643;
+}
+
 /* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ */
 .popular-brands-list {
   border: 1px solid #eaeaea;
@@ -393,13 +478,6 @@ a.checkout:active {
 }
 
 /* СЕРВИСЫ */
-.services {
-  background-color: #f3f7f9;
-  background-image: url(../img/bg-texture.jpg);
-  background-position: 0 0;
-  background-repeat: repeat;
-}
-
 .services-info h2 {
   color: #000000;
 }
@@ -504,6 +582,8 @@ a.checkout:active {
 
 /* МОДАЛЬНЫЕ ОКНА */
 .modal {
+  font-size: 18px;
+  line-height: 18px;
   color: #000000;
 
   background-color: #ffffff;
@@ -511,8 +591,7 @@ a.checkout:active {
 }
 
 .modal-write-us {
-  font-size: 18px;
-  line-height: 18px;
+
   border-top: 7px solid #ff5357;
 }
 
