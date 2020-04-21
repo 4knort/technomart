@@ -3,36 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="main-header">
 
       <div class="header-top">
-        <a href="index.html" class="header-logo">ТЕХНОМАРТ</a>
+        <div class="header-top-wrapper">
+          <a class="header-logo" href="index.html">ТЕХНОМАРТ</a>
 
-        <form class="search-form" action="index.html" method="post">
-          <label class="visually-hidden" for="site-navigation-search">Поиск</label>
-          <input class="search-icon" id="site-navigation-search"
-          type="text" name="search" value="" placeholder="Поиск">
-        </form>
+          <form class="search-form" action="index.html" method="post">
+            <label class="visually-hidden" for="site-navigation-search">Поиск</label>
+            <input class="input-search" id="site-navigation-search"
+            type="text" name="search" value="" placeholder="Поиск:">
+          </form>
 
-        <div class="site-navigation-tools">
-          <button class="bookmarks" type="button" name="bookmarks">
-            <a href="bookmarks.html">Закладки:</a>
-          </button>
-
-          <button class="basket" type="button" name="basket">
-            <a href="basket.html">Корзина:</a>
-          </button>
-
-          <button class="checkout" type="button" name="checkout">
-            <a href="checkout.html">Оформить заказ</a>
-          </button>
+          <div class="site-navigation">
+              <a class="site-navigation-tools bookmarks" href="bookmarks.html">Закладки: 0</a>
+              <a class="site-navigation-tools basket" href="basket.html">Корзина: 0</a>
+              <a class="site-navigation-tools checkout" href="checkout.html">Оформить заказ</a>
+          </div>
         </div>
       </div>
 
-      <div class="header-middle">
+      <div class="header-middle container">
         <div class="description">
           <b>Интернет-магазин строительных материалов и инструментов для ремонта</b>
         </div>
@@ -46,20 +43,20 @@
 
         <div class="user-navigation">
           <div class="user-navigation-logoff">
-            <button type="button"><a class="login" href="#">Вход</a></button>
-            <button type="button"><a class="registration" href="#">Регистрация</a></button>
+            <a class="login" href="#">Вход</a>
+            <a class="registration" href="#">Регистрация</a>
           </div>
           <div class="user-navigation-authorized">
             <span class="user-name">Равшан Джамшутович</span>
-            <button type="button"><a class="logoff" href="#">Выйти</a></button>
+            <a class="logoff" href="#">Выйти</a>
             <a class="user-navigation-orders" href="#">Мои заказы</a>
             <a class="user-navigation-personal-area" href="#">Личный кабинет</a>
           </div>
         </div>
       </div>
 
-      <nav class="header-bottom main-navigation">
-        <ul>
+      <nav class="header-bottom container">
+        <ul class="main-navigation">
           <li><a class="navigation-item" href="index.html">Главная</a></li>
           <li><a class="navigation-item" href="company.html">Компания</a></li>
           <li><a class="navigation-item" href="catalog.html">Каталог</a></li>
@@ -74,9 +71,9 @@
 
     <main class="container">
 
-      <section class="main-offers">
+      <section>
       <h2 class="visually-hidden">Предложения</h2>
-        <ul>
+        <ul class="main-offers">
           <li class="offer-materials new">
             <h3>Материалы</h3>
             <a href="offers.html">
@@ -114,14 +111,14 @@
                 <img src="img/slider-1.jpg" width="620" height="266" alt="slider-1">
                 <h3>ПЕРФОРАТОРЫ</h3>
                 <p>Настоящие мужские игрушки</p>
-                <button class="slider-button button" type="button" name="">ОТКРЫТЬ КАТАЛОГ</button>
+                <a class="slider-button button" type="button" name="">ОТКРЫТЬ КАТАЛОГ</a>
               </div>
 
               <div class="slider-2">
                 <img src="img/slider-2.jpg" width="620" height="266" alt="slider-2">
                 <h3>ДРЕЛИ</h3>
                 <p>Соседям на радость!</p>
-                <button class="slider-button button" type="button" name="">ОТКРЫТЬ КАТАЛОГ</button>
+                <a class="slider-button button" type="button" name="">ОТКРЫТЬ КАТАЛОГ</a>
               </div>
             </article>
           </li>
@@ -130,7 +127,7 @@
 
       <section class="popular-products">
         <div class="popular-products-title">
-          <h2>ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
+          <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
           <a class="button" href="catalog.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
         </div>
 
@@ -138,7 +135,7 @@
             <article class="catalog-product">
               <div class="actions">
                 <a class="buy" href="#">КУПИТЬ</a>
-                <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+                <a class="in-bookmarks" href="#">В ЗАКЛАДКИ</a>
               </div>
               <div class="catalog.product-image">
                 <img src="img/product-1.jpg" width="218" height="148" alt="">
@@ -151,7 +148,7 @@
             <article class="catalog-product">
               <div class="actions">
                 <a class="buy" href="#">КУПИТЬ</a>
-                <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+                <a class="in-bookmarks" href="#">В ЗАКЛАДКИ</a>
               </div>
               <div class="catalog.product-image">
                 <img src="img/product-2.jpg" width="218" height="148" alt="">
@@ -164,7 +161,7 @@
             <article class="catalog-product">
               <div class="actions">
                 <a class="buy" href="#">КУПИТЬ</a>
-                <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+                <a class="in-bookmarks" href="#">В ЗАКЛАДКИ</a>
               </div>
               <div class="catalog.product-image">
                 <img src="img/product-3.jpg" width="218" height="148" alt="">
@@ -177,7 +174,7 @@
             <article class="catalog-product new">
               <div class="actions">
                 <a class="buy" href="#">КУПИТЬ</a>
-                <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+                <a class="in-bookmarks" href="#">В ЗАКЛАДКИ</a>
               </div>
               <div class="catalog.product-image">
                 <img src="img/product-4.jpg" width="218" height="148" alt="">
@@ -191,7 +188,7 @@
 
       <section class="popular-brands">
         <div class="popular-brands-title">
-          <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h2>
+          <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
           <a class="button" href="brands.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
         </div>
 
@@ -292,7 +289,7 @@
             Техномарт работает со многими транспортными компаниями:
           </p>
 
-          <ul>
+          <ul class="transport-companies">
             <li class="business-line">Деловые линии</li>
             <li class="auto-trading">Автотрейдин</li>
             <li class="zheldorexpedition">ЖелДорЭкспедиция</li>
@@ -318,7 +315,7 @@
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
 
       <div class="footer-top">
         <a href="index.html" class="footer-logo">ТЕХНОМАРТ</a>
@@ -362,9 +359,9 @@
 
         <div class="footer-social">
           <ul>
-            <li><a class="footer-social-vk" href="#">Вконтакте</a></li>
-            <li><a class="footer-social-facebook" href="#">Фэйсбук</a></li>
-            <li><a class="footer-social-instagram" href="#">Инстаграм</a></li>
+            <li><a class="footer-social-vk social-button" href="#">Вконтакте</a></li>
+            <li><a class="footer-social-facebook social-button" href="#">Фэйсбук</a></li>
+            <li><a class="footer-social-instagram social-button" href="#">Инстаграм</a></li>
           </ul>
         </div>
 
@@ -385,15 +382,15 @@
       <form class="modal-write-us" action="index.html" method="post">
         <p>
           <label for="name">Ваше имя:</label>
-          <input id="name" type="text" placeholder="Представьтесь, пожалуйста">
+          <input class="input-modal" id="name" type="text" placeholder="Представьтесь, пожалуйста">
         </p>
         <p>
           <label for="email">Ваш e-mail:</label>
-          <input id="email" type="text" placeholder="Для отправки ответа">
+          <input class="input-modal" id="email" type="text" placeholder="Для отправки ответа">
         </p>
         <p>
           <label for="message">Текст письма</label>
-          <input id="message" type="text" placeholder="В свободной форме">
+          <input class="input-modal" id="message" type="text" placeholder="В свободной форме">
         </p>
         <button class="button" type="submit">ОТПРАВИТЬ</button>
       </form>
