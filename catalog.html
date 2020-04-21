@@ -3,36 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="main-header">
 
       <div class="header-top">
-        <a href="index.html" class="header-logo">ТЕХНОМАРТ</a>
+        <div class="header-top-wrapper">
+          <a class="header-logo" href="index.html">ТЕХНОМАРТ</a>
 
-        <form class="search-form" action="index.html" method="post">
-          <label class="visually-hidden" for="site-navigation-search">Поиск</label>
-          <input class="search-icon" id="site-navigation-search"
-          type="text" name="search" value="" placeholder="Поиск">
-        </form>
+          <form class="search-form" action="index.html" method="post">
+            <label class="visually-hidden" for="site-navigation-search">Поиск</label>
+            <input class="input-search" id="site-navigation-search"
+            type="text" name="search" value="" placeholder="Поиск:">
+          </form>
 
-        <div class="site-navigation-tools">
-          <button class="bookmarks" type="button" name="bookmarks">
-            <a href="bookmarks.html">Закладки:</a>
-          </button>
-
-          <button class="basket" type="button" name="basket">
-            <a href="basket.html">Корзина:</a>
-          </button>
-
-          <button class="checkout" type="button" name="checkout">
-            <a href="checkout.html">Оформить заказ</a>
-          </button>
+          <div class="site-navigation">
+              <a class="site-navigation-tools bookmarks" href="bookmarks.html">Закладки: 0</a>
+              <a class="site-navigation-tools basket" href="basket.html">Корзина: 0</a>
+              <a class="site-navigation-tools checkout" href="checkout.html">Оформить заказ</a>
+          </div>
         </div>
       </div>
 
-      <div class="header-middle">
+      <div class="header-middle container">
         <div class="description">
           <b>Интернет-магазин строительных материалов и инструментов для ремонта</b>
         </div>
@@ -46,20 +43,20 @@
 
         <div class="user-navigation">
           <div class="user-navigation-logoff">
-            <button type="button"><a class="login" href="#">Вход</a></button>
-            <button type="button"><a class="registration" href="#">Регистрация</a></button>
+            <a class="login" href="#">Вход</a>
+            <a class="registration" href="#">Регистрация</a>
           </div>
           <div class="user-navigation-authorized">
             <span class="user-name">Равшан Джамшутович</span>
-            <button type="button"><a class="logoff" href="#">Выйти</a></button>
+            <a class="logoff" href="#">Выйти</a>
             <a class="user-navigation-orders" href="#">Мои заказы</a>
             <a class="user-navigation-personal-area" href="#">Личный кабинет</a>
           </div>
         </div>
       </div>
 
-      <nav class="header-bottom main-navigation">
-        <ul>
+      <nav class="header-bottom container">
+        <ul class="main-navigation">
           <li><a class="navigation-item" href="index.html">Главная</a></li>
           <li><a class="navigation-item" href="company.html">Компания</a></li>
           <li><a class="navigation-item" href="catalog.html">Каталог</a></li>
@@ -80,10 +77,10 @@
         <li>ИНСТРУМЕНТ</li>
         <li class="breadcrumbs-current">ПЕРФОРАТОРЫ</li>
       </ul>
-      <h1>ПЕРФОРАТОРЫ</h1>
+      <h2>ПЕРФОРАТОРЫ</h2>
 
       <aside class="aside-filter">
-        <h2>ФИЛЬТР:</h2>
+        <h3>ФИЛЬТР:</h3>
         <form class="filter" method="get" action="">
           <fieldset>
             <legend>ЦЕНА:</legend>
@@ -148,19 +145,19 @@
 
       <section class="container">
         <div class="sort">
-          <h2>СОРТИРОВКА:</h2>
-          <a href="" class="sort-item">ПО ЦЕНЕ</a>
-          <a href="" class="sort-item">ПО ТИПУ</a>
-          <a href="" class="sort-item">ПО ФУНКЦИОНАЛУ</a>
-          <a href="" class="sort-item">x</a>
-          <a href="" class="sort-item">x</a>
+          <h3>СОРТИРОВКА:</h3>
+          <span class="sort-item">ПО ЦЕНЕ</span>
+          <span class="sort-item">ПО ТИПУ</span>
+          <span class="sort-item">ПО ФУНКЦИОНАЛУ</span>
+          <button class="sort-button" type="button" name="sort" value="up-dir">x</button>
+          <button class="sort-button" type="button" name="sort" value="down-dir">x</button>
         </div>
 
         <div class="catalog">
           <article class="catalog-product">
             <div class="actions">
               <a class="buy" href="#">КУПИТЬ</a>
-              <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+              <a class="in-bookmarks" href="#">В ЗАКЛАДКИ</a>
             </div>
             <div class="catalog.product-image">
               <img src="img/product-2.jpg" width="218" height="148" alt="">
@@ -173,7 +170,7 @@
           <article class="catalog-product">
             <div class="actions">
               <a class="buy" href="#">КУПИТЬ</a>
-              <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+              <a class="in-bookmarks" href="#">В ЗАКЛАДКИ</a>
             </div>
             <div class="catalog.product-image">
               <img src="img/product-3.jpg" width="218" height="148" alt="">
@@ -186,7 +183,7 @@
           <article class="catalog-product new">
             <div class="actions">
               <a class="buy" href="#">КУПИТЬ</a>
-              <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+              <a class="in-bookmarks" href="#">В ЗАКЛАДКИ</a>
             </div>
             <div class="catalog.product-image">
               <img src="img/product-4.jpg" width="218" height="148" alt="">
@@ -198,7 +195,7 @@
           <article class="catalog-product">
             <div class="actions">
               <a class="buy" href="#">КУПИТЬ</a>
-              <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+              <a class="in-bookmarks" href="#">В ЗАКЛАДКИ</a>
             </div>
             <div class="catalog.product-image">
               <img src="img/product-2.jpg" width="218" height="148" alt="">
@@ -211,7 +208,7 @@
           <article class="catalog-product new">
             <div class="actions">
               <a class="buy" href="#">КУПИТЬ</a>
-              <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+              <a class="in-bookmarks" href="#">В ЗАКЛАДКИ</a>
             </div>
             <div class="catalog.product-image">
               <img src="img/product-3.jpg" width="218" height="148" alt="">
@@ -224,7 +221,7 @@
           <article class="catalog-product">
             <div class="actions">
               <a class="buy" href="#">КУПИТЬ</a>
-              <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+              <a class="in-bookmarks" href="#">В ЗАКЛАДКИ</a>
             </div>
             <div class="catalog.product-image">
               <img src="img/product-4.jpg" width="218" height="148" alt="">
@@ -237,7 +234,7 @@
           <article class="catalog-product new">
             <div class="actions">
               <a class="buy" href="#">КУПИТЬ</a>
-              <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+              <a class="in-bookmarks" href="#">В ЗАКЛАДКИ</a>
             </div>
             <div class="catalog.product-image">
               <img src="img/product-2.jpg" width="218" height="148" alt="">
@@ -250,7 +247,7 @@
           <article class="catalog-product">
             <div class="actions">
               <a class="buy" href="#">КУПИТЬ</a>
-              <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+              <a class="in-bookmarks" href="#">В ЗАКЛАДКИ</a>
             </div>
             <div class="catalog.product-image">
               <img src="img/product-3.jpg" width="218" height="148" alt="">
@@ -263,7 +260,7 @@
           <article class="catalog-product">
             <div class="actions">
               <a class="buy" href="#">КУПИТЬ</a>
-              <a class="bookmark" href="#">В ЗАКЛАДКИ</a>
+              <a class="in-bookmarks" href="#">В ЗАКЛАДКИ</a>
             </div>
             <div class="catalog.product-image">
               <img src="img/product-4.jpg" width="218" height="148" alt="">
@@ -304,7 +301,7 @@
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
 
       <div class="footer-top">
         <a href="index.html" class="footer-logo">ТЕХНОМАРТ</a>
@@ -348,9 +345,9 @@
 
         <div class="footer-social">
           <ul>
-            <li><a class="footer-social-vk" href="#">Вконтакте</a></li>
-            <li><a class="footer-social-facebook" href="#">Фэйсбук</a></li>
-            <li><a class="footer-social-instagram" href="#">Инстаграм</a></li>
+            <li><a class="footer-social-vk social-button" href="#">Вконтакте</a></li>
+            <li><a class="footer-social-facebook social-button" href="#">Фэйсбук</a></li>
+            <li><a class="footer-social-instagram social-button" href="#">Инстаграм</a></li>
           </ul>
         </div>
 
