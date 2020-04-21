@@ -38,6 +38,7 @@ input[type="radio"].visually-hidden {
 .popular-products-title,
 .popular-brands-title,
 .services,
+.description,
 .breadcrumbs + h2 {
   background-color: #f3f7f9;
   background-image: url(../img/bg-texture.jpg);
@@ -116,15 +117,10 @@ input[type="radio"].visually-hidden {
   background-color: #518534;
 }
 
-.description {
+.header-description {
   font-size: 16px;
   line-height: 23px;
-  color: #000000;
-
-  background-color: #f3f7f9;
-  background-image: url(../img/bg-texture.jpg);
-  background-position: 0 0;
-  background-repeat: repeat;
+  color: #ee3643;
 }
 
 .header-contacts {
@@ -454,6 +450,12 @@ input[type="radio"].visually-hidden {
 
   background-color: #ee3643;
   border-color: #ee3643;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
 }
 
 /* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ */
