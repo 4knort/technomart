@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-/* .visually-hidden:not(:focus):not(:active),
+.visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
@@ -32,11 +32,23 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
+
+.header-top,
+.services,
+.description,
+.footer-top,
+.footer-bottom {
+  width: 100%;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
 .main-header,
-.popular-products-title,
-.popular-brands-title,
 .services,
 .description,
 .breadcrumbs + h2 {
@@ -46,11 +58,28 @@ input[type="radio"].visually-hidden {
   background-repeat: repeat;
 }
 
+.popular-products-title,
+.popular-brands-title {
+  background-color: #f9f5f0;
+}
+
+.aside-filter h3,
+.filter-range,
+.sort {
+  background-color: #f7f3ec;
+}
+
 .header-top {
   background-color: #293449;
 }
 
+.header-top-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-logo {
+  width: 220px;
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
@@ -115,6 +144,11 @@ input[type="radio"].visually-hidden {
 
 .checkout:active {
   background-color: #518534;
+}
+
+.header-middle {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-description {
@@ -188,6 +222,11 @@ input[type="radio"].visually-hidden {
 .user-navigation-personal-area:active {
   color: rgba(50,66,92,0.3);
   text-decoration: underline;
+}
+
+.header-bottom .main-navigation {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-navigation {
