@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
 
     <header class="main-header">
 
@@ -35,18 +35,16 @@
         </div>
 
         <div class="header-contacts">
-          <p>
-            <span class="contact-phone">+7 (812) 555-05-55</span><br>
+            <span class="contact-phone">+7 (812) 555-05-55</span>
             <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-          </p>
         </div>
 
         <div class="user-navigation">
           <div class="user-navigation-logoff">
-            <a class="login" href="#">Вход</a>
+            <a class="login" href="#">Войти</a>
             <a class="registration" href="#">Регистрация</a>
           </div>
-          <div class="user-navigation-authorized">
+          <div class="user-navigation-authorized visually-hidden">
             <span class="user-name">Равшан Джамшутович</span>
             <a class="logoff" href="#">Выйти</a>
             <a class="user-navigation-orders" href="#">Мои заказы</a>
@@ -80,6 +78,7 @@
         </ul>
         <h2>ПЕРФОРАТОРЫ</h2>
 
+      <div class="inner-page-wrapper">
         <aside class="aside-filter">
           <h3>ФИЛЬТР:</h3>
           <form class="filter" method="get" action="">
@@ -146,7 +145,7 @@
           </form>
         </aside>
 
-        <section class="container">
+        <section class="catalog-wrapper">
           <div class="sort">
             <h3>СОРТИРОВКА:</h3>
             <span class="sort-item">ПО ЦЕНЕ</span>
@@ -289,6 +288,7 @@
             </ul>
           </div>
         </section>
+        </div>
       </div>
 
       <article class="description">
@@ -310,60 +310,62 @@
     <footer class="main-footer">
 
       <div class="footer-top">
-        <a href="index.html" class="footer-logo">ТЕХНОМАРТ</a>
+        <div class="container">
+          <div class="footer-top-wrapper">
+            <a href="index.html" class="footer-logo">ТЕХНОМАРТ</a>
 
-        <div class="footer-contacts">
-          <p>
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7 (812) 555-05-55
-          </p>
-        </div>
-
-        <div class="footer-navigation">
-          <div class="footer-navigation-top">
-            <ul>
-              <li><a class="footer-navigation-item" href="company.html">Компания</a></li>
-              <li><a class="footer-navigation-item" href="news.html">Новости</a></li>
-              <li><a class="footer-navigation-item" href="catalog.html">Каталог</a></li>
-              <li><a class="footer-navigation-item" href="delivery.html">Доставка</a></li>
-              <li><a class="footer-navigation-item" href="contacts.html">Контакты</a></li>
-            </ul>
+            <div class="footer-contacts">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+              +7 (812) 555-05-55
+            </div>
           </div>
-          <div class="footer-navigation-bottom">
-            <ul>
-              <li><a class="footer-navigation-item text-color" href="materials.html">Материалы</a></li>
-              <li><a class="footer-navigation-item text-color" href="technics.html">Техника</a></li>
-              <li><a class="footer-navigation-item text-color" href="tools.html">Инструмент</a></li>
-              <li><a class="footer-navigation-item text-color" href="offers.html">Спецпредложения</a></li>
-            </ul>
+
+          <div class="footer-navigation">
+            <div class="footer-navigation-top">
+              <ul>
+                <li><a class="footer-navigation-item" href="company.html">Компания</a></li>
+                <li><a class="footer-navigation-item" href="news.html">Новости</a></li>
+                <li><a class="footer-navigation-item" href="catalog.html">Каталог</a></li>
+                <li><a class="footer-navigation-item" href="delivery.html">Доставка</a></li>
+                <li><a class="footer-navigation-item" href="contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-navigation-bottom">
+              <ul>
+                <li><a class="footer-navigation-item text-color" href="materials.html">Материалы</a></li>
+                <li><a class="footer-navigation-item text-color" href="technics.html">Техника</a></li>
+                <li><a class="footer-navigation-item text-color" href="tools.html">Инструмент</a></li>
+                <li><a class="footer-navigation-item text-color" href="offers.html">Спецпредложения</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
       </div>
 
       <div class="footer-bottom">
-        <div class="footer-copyright-technomart">
-          <p>
-            © 2010–2017 Компания «Техномарт»<br>
+        <div class="container">
+          <div class="footer-copyright-technomart">
+            © 2010–2017 Компания «Техномарт»
             Все права защищены
-          </p>
-        </div>
+          </div>
 
-        <div class="footer-social">
-          <ul>
-            <li><a class="footer-social-vk social-button" href="#">Вконтакте</a></li>
-            <li><a class="footer-social-facebook social-button" href="#">Фэйсбук</a></li>
-            <li><a class="footer-social-instagram social-button" href="#">Инстаграм</a></li>
-          </ul>
-        </div>
+          <div class="footer-social">
+            <ul>
+              <li><a class="footer-social-vk social-button" href="#">Вконтакте</a></li>
+              <li><a class="footer-social-facebook social-button" href="#">Фэйсбук</a></li>
+              <li><a class="footer-social-instagram social-button" href="#">Инстаграм</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-copyright-htmlacademy">
-          <p>Обратная связь:<br>
-            <span class="text-color">mail@htmlacademy.ru</span>
-          </p>
-          <p>Разработано —<br>
-            <span class="text-color">htmlacademy.ru</span>
-          </p>
+          <div class="footer-copyright-htmlacademy">
+            <p>Обратная связь:<br>
+              <span class="text-color">mail@htmlacademy.ru</span>
+            </p>
+            <p>Разработано —<br>
+              <span class="text-color">htmlacademy.ru</span>
+            </p>
+          </div>
         </div>
       </div>
 

@@ -40,10 +40,12 @@ input[type="radio"].visually-hidden {
 .footer-top,
 .footer-bottom {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -69,23 +71,36 @@ input[type="radio"].visually-hidden {
   background-color: #f7f3ec;
 }
 
+.main-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 59px;
+}
+
+.inner-page .main-header {
+  margin-bottom: 0;
+}
+
 .header-top {
+  margin-bottom: 46px;
+
   background-color: #293449;
 }
 
 .header-top-wrapper {
   display: flex;
-  justify-content: space-between;
+  text-align: center;
 }
 
 .header-logo {
   width: 220px;
+  padding: 10px 0 8px;
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
 
   background-color: #ee3643;
-  border-bottom: 5px solid #b72f38;
+  /* border-bottom: 5px solid #b72f38; */
 }
 
 .header-logo:hover,
@@ -97,13 +112,26 @@ input[type="radio"].visually-hidden {
   background-color: #ba2732;
 }
 
+.search-form {
+  width: 270px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #293449;
+}
+
 .input-search {
+  width: 270px;
+  margin: 0;
+  padding: 12px 0;
+
   font: inherit;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
 
   background-color: #293449;
+  border: none;
 }
 
 .input-search:hover {
@@ -116,7 +144,15 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+.site-navigation {
+  display: flex;
+  width: 450px;
+}
+
 .site-navigation-tools {
+  width: 150px;
+  margin: 0;
+  padding: 11px 0;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -149,28 +185,54 @@ input[type="radio"].visually-hidden {
 .header-middle {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 43px;
 }
 
 .header-description {
+  width: 300px;
   font-size: 16px;
   line-height: 23px;
+  font-style: italic;
   color: #ee3643;
 }
 
 .header-contacts {
+  width: 300px;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  text-align: center;
 }
 
 .contact-phone {
+  display: block;
+  width: 264px;
+  margin: 0;
+  padding: 10px 0 8px;
   font-size: 21px;
   line-height: 21px;
+  font-weight: bold;
   color: #ee3643;
+  text-align: center;
+
+  border: 3px solid #ffffff;
+}
+
+.user-navigation {
+  width: 300px;
+}
+
+.user-navigation-logoff,
+.user-navigation-authorized {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .login,
 .registration {
+  margin: 0 10px;
+  margin-right: 0;
+  padding: 12px 25px;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -224,23 +286,28 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 }
 
-.header-bottom .main-navigation {
-  display: flex;
-  justify-content: space-between;
+.header-bottom {
+  padding-bottom: 60px;
 }
 
 .main-navigation {
+  display: flex;
+  width: 940px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-item {
+  display: block;
+  margin: 0;
+  padding: 19px 30px;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
 
   background-color: #32425c;
   border-bottom: 5px solid #293449;
-  list-style: none;
-}
-
-.navigation-item {
-  color: #ffffff;
 }
 
 .navigation-item:hover,
@@ -255,15 +322,32 @@ input[type="radio"].visually-hidden {
 
 /* ХЛЕБНЫЕ КРОШКИ */
 .breadcrumbs {
+  margin: 0;
+  padding: 0;
   font-size: 13px;
   line-height: 18px;
 
   list-style: none;
 }
 
+.breadcrumbs + h2 {
+  padding: 20px;
+}
+
 /* ПРЕДЛОЖЕНИЯ */
 .main-offers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 53px;
+  padding: 0;
   list-style: none;
+}
+
+.main-offers li {
+  width: 300px;
+  margin-bottom: 20px;
 }
 
 .main-offers h3{
@@ -302,11 +386,18 @@ input[type="radio"].visually-hidden {
 }
 
 .offer-discounts {
+  order: 3;
   background-color: #8ed78f;
 }
 
 .offer-delivery {
+  order: 3;
   background-color: #ffc047;
+}
+
+.offer-slider {
+  width: 620px;
+  order: 2;
 }
 
 .offer-slider p,
@@ -340,6 +431,20 @@ input[type="radio"].visually-hidden {
 }
 
 /* ПОПУЛЯРНЫЕ ТОВАРЫ */
+.popular-products-title,
+.popular-brands-title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.popular-products-list,
+.popular-brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
 .popular-products h2,
 .popular-brands h2 {
   font-size: 30px;
@@ -348,6 +453,9 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-product {
+  width: 220px;
+  min-height: 318px;
+  margin-bottom: 20px;
   border: 1px solid #eaeaea;
 }
 
@@ -420,7 +528,52 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
 }
 
+/* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ */
+.popular-brands {
+  margin-bottom: 65px;
+}
+
+.popular-brands-list a {
+  width: 220px;
+  min-height: 145px;
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea;
+}
+
+.popular-brands-list a:hover,
+.popular-brands-list a:focus {
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.popular-brands-list a:active {
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  opacity: 0.3;
+}
+
 /* КАТАЛОГ */
+.inner-page-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-filter {
+  flex-basis: 220px;
+}
+
+.catalog-wrapper {
+  flex-basis: 700px;
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sort {
+  margin-bottom: 20px;
+}
+
 .aside-filter h3,
 .sort h3,
 .sort {
@@ -465,6 +618,8 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -497,24 +652,37 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-/* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ */
-.popular-brands-list {
-  border: 1px solid #eaeaea;
+.description .container h2 {
+  margin: 0;
+  padding-top: 65px;
 }
 
-.popular-brands-list a:hover,
-.popular-brands-list a:focus {
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
-
-.popular-brands-list a:active {
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
-  opacity: 0.3;
+.description .container p {
+  margin: 0;
+  padding-bottom: 65px
 }
 
 /* СЕРВИСЫ */
+.services {
+  margin-bottom: 80px;
+}
+
+.services .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-info {
+  width: 940px;
+}
+
 .services-info h2 {
   color: #000000;
+}
+
+.services-list {
+  width: 240px;
 }
 
 .services-list ul {
@@ -526,6 +694,12 @@ input[type="radio"].visually-hidden {
   background-color: #32425c;
 }
 
+.services-delivery-info,
+.services-guarantee-info,
+.services-credit-info {
+  width: 630px;
+}
+
 .services-delivery-info h3,
 .services-guarantee-info h3,
 .services-credit-info h3 {
@@ -535,6 +709,19 @@ input[type="radio"].visually-hidden {
 }
 
 /* ИНФО */
+.information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.information-about-us {
+  width: 540px;
+}
+
+.information-contacts {
+  width: 300px;
+}
+
 .information h3 {
   font-size: 30px;
   line-height: 30px;
@@ -549,9 +736,26 @@ input[type="radio"].visually-hidden {
 /* Подвал */
 .footer-top {
   background-color: #32425c;
+  margin-top: 80px;
+  padding-bottom: 50px;
+}
+
+.inner-page .footer-top {
+  margin: 0;
+}
+
+.footer-top .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top-wrapper {
+  width: 380px;
 }
 
 .footer-logo {
+  display: inline-block;
+  width: 220px;
   font-size: 30px;
   line-height: 30px;
   color: #ffffff;
@@ -570,6 +774,16 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.footer-navigation {
+  width: 550px;
+}
+
+.footer-navigation-top ul,
+.footer-navigation-bottom ul {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-navigation-item {
   font-size: 18px;
   line-height: 24px;
@@ -583,6 +797,10 @@ input[type="radio"].visually-hidden {
 
 .footer-navigation-item:active {
   opacity: 0.5;
+}
+
+.footer-navigation-item.text-color {
+  margin-left: 25px;
 }
 
 .text-color {
@@ -601,8 +819,27 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright-technomart {
+  width: 300px;
+}
+
+.footer-social {
+  flex-basis: 300px;
+}
+
 .social-button {
   color: #ffffff;
+}
+
+.footer-copyright-htmlacademy {
+  display: flex;
+  flex-basis: 300px;
+  justify-content: space-between;
 }
 
 .footer-copyright-htmlacademy span:hover,

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -35,18 +35,16 @@
         </div>
 
         <div class="header-contacts">
-          <p>
-            <span class="contact-phone">+7 (812) 555-05-55</span><br>
+            <span class="contact-phone">+7 (812) 555-05-55</span>
             <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-          </p>
         </div>
 
         <div class="user-navigation">
           <div class="user-navigation-logoff">
-            <a class="login" href="#">Вход</a>
+            <a class="login" href="#">Войти</a>
             <a class="registration" href="#">Регистрация</a>
           </div>
-          <div class="user-navigation-authorized">
+          <div class="user-navigation-authorized visually-hidden">
             <span class="user-name">Равшан Джамшутович</span>
             <a class="logoff" href="#">Выйти</a>
             <a class="user-navigation-orders" href="#">Мои заказы</a>
@@ -107,7 +105,7 @@
 
           <li>
             <article class="offer-slider">
-              <div class="slider-1">
+              <div class="slider-1 visually-hidden">
                 <img src="img/slider-1.jpg" width="620" height="266" alt="slider-1">
                 <h3>ПЕРФОРАТОРЫ</h3>
                 <p>Настоящие мужские игрушки</p>
@@ -255,7 +253,7 @@
             <img src="img/delivery.png" width="468" height="261" alt="delivery">
           </div>
 
-          <div class="services-guarantee-info">
+          <div class="services-guarantee-info visually-hidden">
             <h3>Гарантия</h3>
             <p>
               Если купленный у нас товар поломается или заискрит,
@@ -268,7 +266,7 @@
             <img src="img/guarantee.png" width="389" height="283" alt="guarantee">
           </div>
 
-          <div class="services-credit-info">
+          <div class="services-credit-info visually-hidden">
             <h3>Кредит</h3>
             <p>
               Залезть в долговую яму стало проще!
@@ -320,66 +318,68 @@
     <footer class="main-footer">
 
       <div class="footer-top">
-        <a href="index.html" class="footer-logo">ТЕХНОМАРТ</a>
+        <div class="container">
+          <div class="footer-top-wrapper">
+            <a href="index.html" class="footer-logo">ТЕХНОМАРТ</a>
 
-        <div class="footer-contacts">
-          <p>
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7 (812) 555-05-55
-          </p>
-        </div>
-
-        <div class="footer-navigation">
-          <div class="footer-navigation-top">
-            <ul>
-              <li><a class="footer-navigation-item" href="company.html">Компания</a></li>
-              <li><a class="footer-navigation-item" href="news.html">Новости</a></li>
-              <li><a class="footer-navigation-item" href="catalog.html">Каталог</a></li>
-              <li><a class="footer-navigation-item" href="delivery.html">Доставка</a></li>
-              <li><a class="footer-navigation-item" href="contacts.html">Контакты</a></li>
-            </ul>
+            <div class="footer-contacts">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+              +7 (812) 555-05-55
+            </div>
           </div>
-          <div class="footer-navigation-bottom">
-            <ul>
-              <li><a class="footer-navigation-item text-color" href="materials.html">Материалы</a></li>
-              <li><a class="footer-navigation-item text-color" href="technics.html">Техника</a></li>
-              <li><a class="footer-navigation-item text-color" href="tools.html">Инструмент</a></li>
-              <li><a class="footer-navigation-item text-color" href="offers.html">Спецпредложения</a></li>
-            </ul>
+
+          <div class="footer-navigation">
+            <div class="footer-navigation-top">
+              <ul>
+                <li><a class="footer-navigation-item" href="company.html">Компания</a></li>
+                <li><a class="footer-navigation-item" href="news.html">Новости</a></li>
+                <li><a class="footer-navigation-item" href="catalog.html">Каталог</a></li>
+                <li><a class="footer-navigation-item" href="delivery.html">Доставка</a></li>
+                <li><a class="footer-navigation-item" href="contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-navigation-bottom">
+              <ul>
+                <li><a class="footer-navigation-item text-color" href="materials.html">Материалы</a></li>
+                <li><a class="footer-navigation-item text-color" href="technics.html">Техника</a></li>
+                <li><a class="footer-navigation-item text-color" href="tools.html">Инструмент</a></li>
+                <li><a class="footer-navigation-item text-color" href="offers.html">Спецпредложения</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
       </div>
 
       <div class="footer-bottom">
-        <div class="footer-copyright-technomart">
-          <p>
-            © 2010–2017 Компания «Техномарт»<br>
-            Все права защищены
-          </p>
-        </div>
+        <div class="container">
+          <div class="footer-copyright-technomart">
+              © 2010–2017 Компания «Техномарт»
+              Все права защищены
+          </div>
 
-        <div class="footer-social">
-          <ul>
-            <li><a class="footer-social-vk social-button" href="#">Вконтакте</a></li>
-            <li><a class="footer-social-facebook social-button" href="#">Фэйсбук</a></li>
-            <li><a class="footer-social-instagram social-button" href="#">Инстаграм</a></li>
-          </ul>
-        </div>
+          <div class="footer-social">
+            <ul>
+              <li><a class="footer-social-vk social-button" href="#">Вконтакте</a></li>
+              <li><a class="footer-social-facebook social-button" href="#">Фэйсбук</a></li>
+              <li><a class="footer-social-instagram social-button" href="#">Инстаграм</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-copyright-htmlacademy">
-          <p>Обратная связь:<br>
-            <span class="text-color">mail@htmlacademy.ru</span>
-          </p>
-          <p>Разработано —<br>
-            <span class="text-color">htmlacademy.ru</span>
-          </p>
+          <div class="footer-copyright-htmlacademy">
+            <p>Обратная связь:<br>
+              <span class="text-color">mail@htmlacademy.ru</span>
+            </p>
+            <p>Разработано —<br>
+              <span class="text-color">htmlacademy.ru</span>
+            </p>
+          </div>
         </div>
       </div>
 
     </footer>
 
-    <section class="modal modal-write-us">
+    <section class="modal modal-write-us visually-hidden">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form class="modal-write-us" action="index.html" method="post">
         <p>
@@ -399,7 +399,7 @@
       <button class="modal-close" type="button">ЗАКРЫТЬ</button>
     </section>
 
-    <section class="modal modal-map">
+    <section class="modal modal-map visually-hidden">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p>
         <img src="img/map.jpg" width="970" height="476" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
