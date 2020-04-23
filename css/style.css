@@ -557,11 +557,11 @@ input[type="radio"].visually-hidden {
 }
 
 .aside-filter {
-  flex-basis: 220px;
+  width: 220px;
 }
 
 .catalog-wrapper {
-  flex-basis: 700px;
+  width: 700px;
 }
 
 .catalog {
@@ -784,6 +784,10 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
+.footer-navigation-bottom {
+  margin-left: 25px;
+}
+
 .footer-navigation-item {
   font-size: 18px;
   line-height: 24px;
@@ -797,10 +801,6 @@ input[type="radio"].visually-hidden {
 
 .footer-navigation-item:active {
   opacity: 0.5;
-}
-
-.footer-navigation-item.text-color {
-  margin-left: 25px;
 }
 
 .text-color {
@@ -829,7 +829,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social {
-  flex-basis: 300px;
+  width: 300px;
 }
 
 .social-button {
@@ -838,7 +838,7 @@ input[type="radio"].visually-hidden {
 
 .footer-copyright-htmlacademy {
   display: flex;
-  flex-basis: 300px;
+  width: 300px;
   justify-content: space-between;
 }
 
