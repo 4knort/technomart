@@ -342,23 +342,35 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 53px;
   padding: 0;
-  list-style: none;
 }
 
 .offer-row-top {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
-.offer-row-botom {
+.offer-row-bottom {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
 }
 
-.main-offers li {
+.offer-row-top div,
+.offer-row-bottom div  {
   width: 300px;
   margin-bottom: 20px;
 }
+
+/* .main-offers li {
+  width: 300px;
+  margin-bottom: 20px;
+} */
 
 .main-offers h3{
   font-size: 24px;
@@ -406,6 +418,7 @@ input[type="radio"].visually-hidden {
 }
 
 .offer-slider {
+  align-items: flex-end;
   width: 620px;
   order: 2;
 }
