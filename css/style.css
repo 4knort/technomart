@@ -354,7 +354,7 @@ input[type="radio"].visually-hidden {
 }
 
 .offer-row-top > div,
-.offer-row-bottom > div  {
+.column-right > div  {
   width: 300px;
   margin-bottom: 20px;
 }
@@ -408,8 +408,8 @@ input[type="radio"].visually-hidden {
 }
 
 .column-right {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   order: 2;
 }
 
