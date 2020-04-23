@@ -336,13 +336,23 @@ input[type="radio"].visually-hidden {
 
 /* ПРЕДЛОЖЕНИЯ */
 .main-offers {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   margin: 0;
   margin-bottom: 53px;
   padding: 0;
   list-style: none;
+}
+
+.offer-row-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer-row-botom {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-offers li {
