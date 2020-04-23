@@ -322,6 +322,8 @@ input[type="radio"].visually-hidden {
 
 /* ХЛЕБНЫЕ КРОШКИ */
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
   font-size: 13px;
@@ -336,9 +338,6 @@ input[type="radio"].visually-hidden {
 
 /* ПРЕДЛОЖЕНИЯ */
 .main-offers {
-  /* display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; */
   margin: 0;
   margin-bottom: 53px;
   padding: 0;
@@ -354,16 +353,11 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.offer-row-top div,
-.offer-row-bottom div  {
+.offer-row-top > div,
+.offer-row-bottom > div  {
   width: 300px;
   margin-bottom: 20px;
 }
-
-/* .main-offers li {
-  width: 300px;
-  margin-bottom: 20px;
-} */
 
 .main-offers h3{
   font-size: 24px;
@@ -401,17 +395,21 @@ input[type="radio"].visually-hidden {
 }
 
 .offer-discounts {
-  order: 3;
   background-color: #8ed78f;
 }
 
 .offer-delivery {
-  order: 3;
   background-color: #ffc047;
 }
 
 .offer-slider {
   width: 620px;
+  order: 1;
+}
+
+.column-right {
+  /* display: flex;
+  flex-direction: column; */
   order: 2;
 }
 
@@ -633,6 +631,8 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-list {
+  display: flex;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -844,6 +844,8 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social {
+  display: flex;
+  justify-content: center;
   width: 300px;
 }
 
