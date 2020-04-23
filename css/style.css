@@ -344,14 +344,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.offer-row-top {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-}
-
+.offer-row-top,
 .offer-row-bottom {
   display: flex;
   justify-content: space-between;
@@ -418,7 +411,6 @@ input[type="radio"].visually-hidden {
 }
 
 .offer-slider {
-  align-items: flex-end;
   width: 620px;
   order: 2;
 }
