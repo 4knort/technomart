@@ -121,12 +121,25 @@ input[type="radio"].visually-hidden {
   background-color: #293449;
 }
 
-.search-form::before {
+.search-button {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+
+  top: 11px;
+  left: 15px;
+
+  background-color: #293449;
+  border: none;
+  outline: none;
+}
+
+.search-button::before {
   content: "";
 
   position: absolute;
-  top: 12px;
-  left: 17px;
+  top: 1px;
+  left: 2px;
 
   width: 20px;
   height: 20px;
@@ -137,17 +150,19 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.search-form:hover::before {
+.input-search:hover + .search-button::before {
   opacity: 1;
 }
 
-.search-form:focus::before {
+.input-search:focus + .search-button::before {
+  fill: red;
   opacity: 1;
-  fill: #ee3643;
+  background-image: url('../img/icon-search-red.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .input-search {
-  width: 220px;
   margin: 0;
   padding: 12px 65px;
   padding-left: 48px;
@@ -158,6 +173,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #293449;
   border: none;
+  outline: none;
 }
 
 .input-search::placeholder {
@@ -272,7 +288,7 @@ input[type="radio"].visually-hidden {
 
 .header-description {
   width: 300px;
-  margin: 0 10px;
+  margin: 0;
   margin-left: 0;
   padding: 0;
   font-size: 16px;
@@ -288,7 +304,7 @@ input[type="radio"].visually-hidden {
 
 .header-contacts {
   width: 300px;
-  margin: 0 10px;
+  margin: 0;
   padding: 0;
   font-size: 14px;
   line-height: 24px;
@@ -331,7 +347,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation {
   width: 300px;
-  margin: 0 10px;
+  margin: 0;
   margin-right: 0;
   padding: 0;
 }
@@ -517,7 +533,7 @@ input[type="radio"].visually-hidden {
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -533,6 +549,14 @@ input[type="radio"].visually-hidden {
 
   background-color: #32425c;
   border-bottom: 5px solid #293449;
+}
+
+li:first-child .navigation-item  {
+  padding-left: 52px;
+}
+
+li:last-child .navigation-item  {
+  padding-right: 48px;
 }
 
 .navigation-item:hover,
