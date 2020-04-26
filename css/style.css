@@ -78,7 +78,7 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .main-header {
-  margin-bottom: 0;
+  margin-bottom: 23px;
 }
 
 .header-top {
@@ -216,7 +216,9 @@ input[type="radio"].visually-hidden {
 
 .bookmarks {
   position: relative;
-  padding: 12px 28px 12px 44px;
+  width: 100%;
+  max-width: 106px;
+  padding: 12px 0 12px 44px;
 }
 
 .bookmarks::before {
@@ -242,7 +244,13 @@ input[type="radio"].visually-hidden {
 
 .basket {
   position: relative;
-  padding: 12px 31px 12px 49px;
+  width: 100%;
+  max-width: 100px;
+  padding: 12px 0 12px 49px;
+}
+
+.inner-page .basket {
+  background-color: #ee3643;
 }
 
 .basket::before {
@@ -267,7 +275,9 @@ input[type="radio"].visually-hidden {
 }
 
 .checkout {
-  padding: 12px 21px 12px 20px;
+  width: 100%;
+  max-width: 129px;
+  padding: 12px 0 12px 21px;
   background-color: #63a63e;
 }
 
@@ -420,7 +430,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 12px 46px;
+  padding: 12px 46px 12px 48px;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -436,7 +446,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 12px;
+  top: 13px;
   left: 14px;
 
   width: 20px;
@@ -455,8 +465,8 @@ input[type="radio"].visually-hidden {
 
 .logout {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 14px;
+  right: 16px;
 
   font-size: 16px;
   line-height: 18px;
@@ -485,7 +495,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation-orders,
 .user-navigation-personal-area {
-  margin: 5px 16px;
+  margin: 8px 16px;
   padding: 0;
   font-size: 16px;
   line-height: 18px;
@@ -506,7 +516,7 @@ input[type="radio"].visually-hidden {
   height: 0;
 
   top: 7px;
-  left: -18px;
+  left: -17px;
 
   border: 2px solid #32425c;
   border-radius: 2px;
@@ -574,6 +584,7 @@ li:last-child .navigation-item  {
 .breadcrumbs {
   display: flex;
   justify-content: flex-start;
+  position: relative;
   margin: 0;
   padding: 0;
   font-size: 13px;
@@ -584,6 +595,11 @@ li:last-child .navigation-item  {
 
 .breadcrumbs + h2 {
   padding: 20px;
+}
+
+.breadcrumbs-home {
+  margin: 0;
+  padding: 0 7px;
 }
 
 /* ПРЕДЛОЖЕНИЯ */
