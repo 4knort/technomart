@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Техномарт</title>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -84,16 +85,26 @@
         <aside class="aside-filter">
           <h3>ФИЛЬТР:</h3>
           <form class="filter" method="get" action="">
-            <fieldset class="filter-range">
+            
+            <fieldset class="filter-item">
               <legend>ЦЕНА:</legend>
-              <!-- ползунок -->
-              <input id="min-max" type="range" min="0" max="35000" step="1" value="30000">
-
-              <label for="min"></label>
-              <input class="filter-price-min" id="min" type="number" name="filter-price-min" value="0">
-              <span>-</span>
-              <label for="max"></label>
-              <input class="filter-price-max" id="max" type="number" name="filter-price-max" value="30000">
+              <div class="filter-range">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price" for="min">
+                    <input id="min" type="text" name="min-price" value="0">
+                  </label>
+                  <label class="max-price" for="max">
+                    <input id="max" type="text" name="max-price" value="30000">
+                  </label>
+                </div>
+              </div>
             </fieldset>
 
             <fieldset>
@@ -150,11 +161,13 @@
         <section class="catalog-wrapper">
           <div class="sort">
             <h3>СОРТИРОВКА:</h3>
-            <span class="sort-item">ПО ЦЕНЕ</span>
-            <span class="sort-item">ПО ТИПУ</span>
-            <span class="sort-item">ПО ФУНКЦИОНАЛУ</span>
-            <button class="sort-button" type="button" name="sort" value="up-dir">x</button>
-            <button class="sort-button" type="button" name="sort" value="down-dir">x</button>
+            <div class="sort-list">
+              <span class="sort-item">ПО ЦЕНЕ</span>
+              <span class="sort-item">ПО ТИПУ</span>
+              <span class="sort-item">ПО ФУНКЦИОНАЛУ</span>
+            </div>
+              <button class="sort-button" type="button" name="sort" value="up-dir">x</button>
+              <button class="sort-button" type="button" name="sort" value="down-dir">x</button>
           </div>
 
           <div class="catalog">
