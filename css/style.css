@@ -17,7 +17,7 @@ a {
 }
 
 .inner-page > main{
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   line-height: 18px;
 }
 
@@ -602,8 +602,8 @@ li:last-child .navigation-item  {
   margin-left: 40px;
 }
 
-li.breadcrumbs-home {
-  margin-left: 10px;
+.breadcrumbs-home a {
+  margin: 0;
   padding: 0;
 }
 
@@ -647,6 +647,7 @@ li.breadcrumbs-home {
   padding: 30px 28px;
   font-size: 30px;
   font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   line-height: 30px;
   color: #32425c;
 }
@@ -672,6 +673,23 @@ li.breadcrumbs-home {
   display: flex;
   flex-direction: column;
   order: 2;
+}
+
+.offer .flag {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.offer .flag-new {
+  background-image: url(../img/new.png);
+  background-repeat: no-repeat;
 }
 
 .offer-row-top > div,
@@ -712,7 +730,7 @@ li.breadcrumbs-home {
   color: #ffffff;
 
   background-color: rgba(0,0,0,0.1);
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .offer-row-top a:hover,
@@ -962,8 +980,10 @@ p.slider-text {
 }
 
 .slider-button.button {
+  max-width: 195px;
+  width: 100%;
   margin: 121px 0 0 25px;
-  padding: 10px 48px;
+  padding: 10px 0;
 }
 
 .slider-item:nth-child(1) {
@@ -989,11 +1009,12 @@ background-position: 0 0;
 
   background-color: #ee3643;
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .button:hover,
-.button:focus, {
+.button:focus {
   background-color: #ca2c37;
 }
 
@@ -1004,8 +1025,26 @@ background-position: 0 0;
 /* ПОПУЛЯРНЫЕ ТОВАРЫ */
 .popular-products-title,
 .popular-brands-title {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   margin-bottom: 20px;
+  padding: 25px 24px;
+}
+
+.popular-products-title h2,
+.popular-brands-title h2 {
+  margin: 0;
+  padding: 4px 4px;
+  font-weight: 400;
+}
+
+.popular-products-title .button,
+.popular-brands-title .button {
+  max-width: 253px;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
 }
 
 .popular-products-list,
@@ -1024,9 +1063,12 @@ background-position: 0 0;
 }
 
 .catalog-product {
-  width: 220px;
+  position: relative;
+  max-width: 218px;
+  width: 100%;
   min-height: 318px;
   margin-bottom: 20px;
+  text-align: center;
   border: 1px solid #eaeaea;
 }
 
@@ -1035,14 +1077,65 @@ background-position: 0 0;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
+.catalog.product-image {
+  width: 218px;
+  height: 148px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.catalog-product .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.catalog-product .flag-new {
+  background-image: url(../img/new.png);
+  background-repeat: no-repeat;
+}
+
+.catalog-product .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 138px;
+  height: 88px;
+  padding: 40px 40px 20px 40px;
+  z-index: 10;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.catalog-product .actions {
+  display: none;
+}
+
+.catalog-product:hover .actions {
+  display: block;
+}
+
 .buy {
+  display: inline-block;
+  max-width: 90px;
+  width: 100%;
+  margin: 3px 0;
+  padding: 9px 21px 8px 24px;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
 
   background-color: #63a63e;
   border-bottom: 3px solid #377416;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .buy:hover,
@@ -1052,17 +1145,23 @@ background-position: 0 0;
 }
 
 .buy:active {
-  background-color: #5fbb2d;
-  border-bottom: 3px solid #5fbb2d;
+  background-color: #518534;
+  border-bottom: 3px solid #518534;
 }
 
 .in-bookmarks {
+  display: inline-block;
+  max-width: 90px;
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px 16px 6px 23px;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #32425c;
 
   border: 3px solid #63a63e;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .in-bookmarks:hover,
@@ -1080,23 +1179,58 @@ background-position: 0 0;
 }
 
 .catalog-product-title {
+  min-height: 40px;
+  margin: 0;
+  margin-top: 25px;
+  padding: 0 25px;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
 }
 
 .catalog-product-discount {
+  display: inline-block;
+  max-width: 140px;
+  min-height: 18px;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
   font-size: 17px;
   line-height: 18px;
+  font-weight: 700;
   color: #a9a9a9;
   text-decoration: line-through;
 }
 
 .catalog-product-price {
+  display: inline-block;
+  position: relative;
+  max-width: 140px;
+  min-height: 18px;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
   font-size: 17px;
   line-height: 18px;
+  font-weight: 700;
   color: #ffffff;
 
   background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.catalog-product-price::after {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  right: -20px;
+
+  width: 0;
+  height: 0;
+
+  border: 19px solid #ffffff;
+  border-left-color: transparent;
 }
 
 /* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ */
@@ -1220,7 +1354,7 @@ background-position: 0 0;
   width: 75px;
   padding: 10px 10px;
 
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   text-align: center;
   color: #000000;
@@ -1244,7 +1378,6 @@ background-position: 0 0;
 .inner-page-wrapper h3 {
   font-size: 13px;
   line-height: 18px;
-  font-weight: 400;
 }
 
 /* fieldset.filter-item {
@@ -1392,7 +1525,7 @@ fieldset.filter-item:first-child {
   color: #000000;
 
   border: 1px solid #e5e5e5;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .pagination-item a:hover,
@@ -1420,11 +1553,17 @@ fieldset.filter-item:first-child {
 .description .container h2 {
   margin: 0;
   padding-top: 65px;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
 }
 
 .description .container p {
   margin: 0;
-  padding-bottom: 65px
+  padding-bottom: 65px;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 /* СЕРВИСЫ */
