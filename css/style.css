@@ -908,7 +908,7 @@ li:last-child .navigation-item  {
   padding: 24px 0 22px 25px;
   overflow: hidden;
 
-  background-color: #f2f6f8;
+  background-color: #32425c;
 }
 
 .slider-item .slider-text {
@@ -1037,8 +1037,8 @@ li:last-child .navigation-item  {
 
 .popular-products-title h2,
 .popular-brands-title h2 {
-  margin: 0;
-  padding: 4px 4px;
+  margin: 4px 4px;
+  padding: 0;
   font-weight: 400;
 }
 
@@ -1055,7 +1055,7 @@ li:last-child .navigation-item  {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 .popular-products h2,
@@ -1069,7 +1069,9 @@ li:last-child .navigation-item  {
   position: relative;
   max-width: 218px;
   width: 100%;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
   vertical-align: top;
   overflow: hidden;
@@ -1198,21 +1200,26 @@ li:last-child .navigation-item  {
   opacity: 0.3;
 }
 
+.catalog-product-image {
+  width: 218px;
+  height: 148px;
+}
+
 .catalog-product-title {
   min-height: 40px;
-  margin: 24px 0 6px;
+  margin: 32px 0 11px;
   padding: 0 25px;
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
 }
 
 .catalog-product-discount {
-  display: inline-block;
+  display: block;
   max-width: 140px;
   min-height: 18px;
   width: 100%;
-  margin: 5px 0 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
   padding: 0;
   font-size: 17px;
   line-height: 18px;
@@ -1222,12 +1229,13 @@ li:last-child .navigation-item  {
 }
 
 .catalog-product-price {
-  display: inline-block;
+  display: block;
   position: relative;
   max-width: 140px;
   min-height: 18px;
   width: 100%;
-  margin: 5px 0 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   padding: 10px 0;
   font-size: 17px;
   line-height: 18px;
@@ -1254,15 +1262,17 @@ li:last-child .navigation-item  {
 
 /* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ */
 .popular-brands {
-  margin-bottom: 65px;
+  margin-bottom: 85px;
 }
 
 .popular-brands-list a {
-
   width: 220px;
   min-height: 145px;
-  margin-bottom: 20px;
   border: 1px solid #eaeaea;
+}
+
+.popular-brands-list a:nth-child(-n+4) {
+  margin-bottom: 20px;
 }
 
 .popular-brands-list img {
@@ -1599,41 +1609,181 @@ fieldset.filter-item:first-child {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 65px 0 102px;
 }
 
-.services-info {
+.services-title {
   width: 940px;
 }
 
-.services-info h2 {
+.services-title h2 {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 30px;
   color: #000000;
 }
 
-.services-list {
-  width: 240px;
+.services-title p {
+  margin: 0;
+  margin-bottom: 70px;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
-.services-list ul {
+.services-list {
+  position: relative;
+  width: 940px;
+  min-height: 182px;
+}
+
+ul.services-button {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+
+  margin: 0;
+  padding: 0;
+  width: 240px;
+  list-style: none;
+}
+
+.services-button li {
+  margin: 0;
+  padding: 0;
+}
+
+.services-button li:last-child {
+  border: none;
+}
+
+.services-button h3 {
+  margin: 0;
+  padding: 13px 0 17px 22px;
   font-size: 21px;
   line-height: 30px;
+  font-weight: 700;
   color: #ffffff;
-  list-style: none;
 
   background-color: #32425c;
+  border-bottom: 1px solid #4d627b;
+  cursor: pointer;
 }
 
-.services-delivery-info,
-.services-guarantee-info,
-.services-credit-info {
-  width: 630px;
+.services-button  .current  h3 {
+  color: #32425c;
+
+  background-color: #ffffff;
 }
 
-.services-delivery-info h3,
-.services-guarantee-info h3,
-.services-credit-info h3 {
+.services-button h3:hover,
+.services-button h3:focus {
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+ul.services-button::after {
+  content: "";
+
+  position: absolute;
+  top: -45px;
+  right: 0;
+  z-index: 100;
+
+  width: 10px;
+  height: 280px;
+
+  background-image: url(../img/icon-line.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+/* .services-descriptions {
+  position: absolute;
+  top: 0px;
+  left: 320px;
+  z-index: 50;
+
+  width: 620px;
+} */
+
+.services-info {
+  display: none;
+}
+
+.services-info.current {
+  display: block;
+}
+
+.services-info h3 {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
   font-size: 36px;
+  text-transform: uppercase;
   line-height: 36px;
   color: #32425c;
+}
+
+.services-info p {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.services-info.delivery {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  width: 620px;
+  height: 261px;
+
+  background-image: url(../img/delivery.png);
+  background-repeat: no-repeat;
+  background-position: 151px 23px;
+}
+
+.services-info.guarantee {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  width: 620px;
+  height: 261px;
+
+  background-image: url(../img/guarantee.png);
+  background-repeat: no-repeat;
+  background-position: 240px 5px;
+}
+
+.services-info.credit {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  width: 620px;
+  height: 261px;
+
+  background-image: url(../img/credit.png);
+  background-repeat: no-repeat;
+  background-position: 155px 0px;
+}
+
+.services-info.credit p {
+  margin-bottom: 30px;
+}
+
+.services-credit-button {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 0;
+  max-width: 195px;
+  width: 100%;
 }
 
 /* ИНФО */
