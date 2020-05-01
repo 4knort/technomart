@@ -98,14 +98,16 @@ input[type="radio"].visually-hidden {
 
 .header-logo {
   max-width: 220px;
+  width: 100%;
   margin: 0;
-  padding: 10px 55px 8px 56px;
+  padding: 10px 0 8px;
   text-align: center;
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
 
   background-color: #ee3643;
+  box-shadow: 0px 5px 1px 0px #b52933;
 }
 
 .header-logo:hover,
@@ -131,40 +133,24 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 
-  top: 11px;
-  left: 15px;
+  top: 12px;
+  left: 17px;
 
-  background-color: #293449;
+  background-color: transparent;
   border: none;
   outline: none;
 }
 
-.search-button::before {
-  content: "";
-
-  position: absolute;
-  top: 1px;
-  left: 2px;
-
-  width: 20px;
-  height: 20px;
-
-  background-image: url(../img/icon-search.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.search-button {
   opacity: 0.3;
 }
 
-.input-search:hover + .search-button::before {
+.input-search:hover + .search-button {
   opacity: 1;
 }
 
-.input-search:focus + .search-button::before {
-  fill: red;
-  opacity: 1;
-  background-image: url(../img/icon-search-red.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.input-search:focus + .search-button path {
+  fill: #b52933;
 }
 
 .input-search {
@@ -1874,7 +1860,12 @@ main {
 
 .footer-logo {
   display: inline-block;
-  width: 220px;
+  max-width: 220px;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 18px 0 15px 0;
+  text-align: center;
   font-size: 30px;
   line-height: 30px;
   color: #ffffff;
@@ -1884,23 +1875,30 @@ main {
 }
 
 .footer-contacts {
+  margin: 0;
+  margin-left: 3px;
+  padding: 0;
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
 }
 
-.footer-navigation ul {
+.footer-navigation {
+  width: 550px;
+  padding-top: 38px;
+}
+
+.footer-navigation-top,
+.footer-navigation-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.footer-navigation {
-  width: 550px;
-}
-
-.footer-navigation-top ul,
-.footer-navigation-bottom ul {
-  display: flex;
-  justify-content: space-between;
+.footer-navigation-top {
+  margin-bottom: 33px;
 }
 
 .footer-navigation-bottom {
@@ -1927,15 +1925,12 @@ main {
 }
 
 .footer-bottom {
+  padding-top: 35px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 
   background-color: #293449;
-}
-
-.footer-bottom ul {
-  list-style: none;
 }
 
 .footer-bottom .container {
@@ -1945,22 +1940,56 @@ main {
 
 .footer-copyright-technomart {
   width: 300px;
+  margin-right: 90px;
 }
 
 .footer-social {
   display: flex;
-  justify-content: center;
-  width: 300px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 132px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 41px;
+  height: 41px;
   color: #ffffff;
+
+  background-color: #212a3a;
+  border-radius: 50%;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #ee3643;
+}
+
+.social-button:focus {
+  background-color: #ee3643;
+  opacity: 0.9;
 }
 
 .footer-copyright-htmlacademy {
   display: flex;
   width: 300px;
-  justify-content: space-between;
+  margin-left: auto;
+}
+
+.footer-copyright-htmlacademy p {
+  margin: 0;
+  margin-right: 52px;
+  padding: 0;
+}
+
+.footer-copyright-htmlacademy p:last-child {
+  margin: 0;
 }
 
 .footer-copyright-htmlacademy span:hover,
