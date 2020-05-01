@@ -1804,7 +1804,22 @@ main {
 }
 
 .transport-companies li {
+  position: relative;
   margin: 0 0 20px 35px;
+}
+
+.transport-companies li::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: -35px;
+
+  width: 23px;
+  height: 0;
+  color: #ee3643;
+
+  border: 1px solid #ee3643;
 }
 
 .more-about-us {
@@ -1925,7 +1940,7 @@ main {
 }
 
 .footer-bottom {
-  padding-top: 35px;
+  padding: 35px 0 30px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
