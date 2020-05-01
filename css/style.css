@@ -16,9 +16,8 @@ a {
   text-decoration: none;
 }
 
-.inner-page > main{
+.different-font {
   font-family: "PT Sans", Arial, sans-serif;
-  line-height: 18px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -1071,7 +1070,6 @@ li:last-child .navigation-item  {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
   vertical-align: top;
   overflow: hidden;
@@ -1275,8 +1273,41 @@ li:last-child .navigation-item  {
   margin-bottom: 20px;
 }
 
-.popular-brands-list img {
+.popular-brands-item {
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+.bosch {
+  background-image: url(..//img/bosch.png);
+}
+
+.makita {
+  background-image: url(..//img/makita.png);
+}
+
+.dewalt {
+  background-image: url(..//img/dewalt.png);
+}
+
+.interscol {
+  background-image: url(..//img/interscol.png);
+}
+
+.hitachi {
+  background-image: url(..//img/hitachi.png);
+}
+
+.lg {
+  background-image: url(..//img/lg.png);
+}
+
+.aeg {
+  background-image: url(..//img/aeg.png);
+}
+
+.metabo {
+  background-image: url(..//img/metabo.png);
 }
 
 .popular-brands-list a:hover,
@@ -1388,7 +1419,6 @@ li:last-child .navigation-item  {
   width: 75px;
   padding: 10px 10px;
 
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   text-align: center;
   color: #000000;
@@ -1413,18 +1443,6 @@ li:last-child .navigation-item  {
   font-size: 13px;
   line-height: 18px;
 }
-
-/* fieldset.filter-item {
-  display: flex;
-  flex-direction: column;
-  width: 220px;
-  margin: 0;
-  padding: 25px 0;
-}
-
-fieldset.filter-item:first-child {
-  padding-top: 0;
-} */
 
 .catalog-wrapper {
   width: 700px;
@@ -1609,11 +1627,12 @@ fieldset.filter-item:first-child {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 65px 0 102px;
+  padding-top: 65px;
 }
 
 .services-title {
   width: 940px;
+  margin-bottom: 70px;
 }
 
 .services-title h2 {
@@ -1627,23 +1646,17 @@ fieldset.filter-item:first-child {
 
 .services-title p {
   margin: 0;
-  margin-bottom: 70px;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .services-list {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
   width: 940px;
-  min-height: 182px;
 }
 
-ul.services-button {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 100;
-
+.services-button {
+  position: relative;
   margin: 0;
   padding: 0;
   width: 240px;
@@ -1651,15 +1664,6 @@ ul.services-button {
 }
 
 .services-button li {
-  margin: 0;
-  padding: 0;
-}
-
-.services-button li:last-child {
-  border: none;
-}
-
-.services-button h3 {
   margin: 0;
   padding: 13px 0 17px 22px;
   font-size: 21px;
@@ -1672,20 +1676,30 @@ ul.services-button {
   cursor: pointer;
 }
 
-.services-button  .current  h3 {
+.services-button li:last-child {
+  border: none;
+}
+
+.services-button  .current {
   color: #32425c;
 
   background-color: #ffffff;
 }
 
-.services-button h3:hover,
-.services-button h3:focus {
+.services-button li:hover,
+.services-button li:focus {
   color: #ffffff;
 
   background-color: #293449;
 }
 
-ul.services-button::after {
+.services-button li:active {
+  color: #32425c;
+
+  background-color: #ffffff;
+}
+
+.services-button::after {
   content: "";
 
   position: absolute;
@@ -1701,15 +1715,11 @@ ul.services-button::after {
   background-position: 0 0;
 }
 
-
-/* .services-descriptions {
-  position: absolute;
-  top: 0px;
-  left: 320px;
-  z-index: 50;
-
+.services-descriptions {
+  position: relative;
   width: 620px;
-} */
+  min-height: 285px;
+}
 
 .services-info {
   display: none;
@@ -1724,57 +1734,41 @@ ul.services-button::after {
   margin-bottom: 23px;
   padding: 0;
   font-size: 36px;
-  text-transform: uppercase;
   line-height: 36px;
+  text-transform: uppercase;
   color: #32425c;
 }
 
 .services-info p {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
 }
 
-.services-info.delivery {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-
-  width: 620px;
-  height: 261px;
+.delivery {
+  padding-bottom: 130px;
 
   background-image: url(../img/delivery.png);
   background-repeat: no-repeat;
   background-position: 151px 23px;
 }
 
-.services-info.guarantee {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-
-  width: 620px;
-  height: 261px;
+.guarantee {
+  padding-bottom: 105px;
 
   background-image: url(../img/guarantee.png);
   background-repeat: no-repeat;
   background-position: 240px 5px;
 }
 
-.services-info.credit {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-
-  width: 620px;
-  height: 261px;
+.credit {
+  padding-bottom: 105px;
 
   background-image: url(../img/credit.png);
   background-repeat: no-repeat;
   background-position: 155px 0px;
 }
 
-.services-info.credit p {
+.credit p {
   margin-bottom: 30px;
 }
 
