@@ -353,6 +353,16 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
+.user-navigation .user-navigation-logoff,
+.user-navigation .user-navigation-authorized {
+  display: none;
+}
+
+.user-navigation .user-navigation-logoff.active,
+.user-navigation .user-navigation-authorized.active {
+  display: flex;
+}
+
 .user-navigation-logoff,
 .user-navigation-authorized {
   display: flex;
