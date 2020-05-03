@@ -38,6 +38,53 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+/* КНОПКИ */
+
+.button {
+  display: inline-block;
+  font: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
+.inner-page .button {
+  font-size: 13px;
+  color: #000000;
+
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  outline: none;
+}
+
+.inner-page .button:hover,
+.inner-page .button:focus {
+  border-color: #bdc6ca;
+}
+
+.inner-page .button:active {
+  border-color: #ee3643;
+}
+
 .header-top,
 .services,
 .description,
@@ -56,7 +103,7 @@ input[type="radio"].visually-hidden {
 
 .main-header,
 .services,
-.description,
+.background-wrapper,
 .breadcrumbs + h2 {
   background-color: #f3f7f9;
   background-image: url(../img/bg-texture.jpg);
@@ -73,6 +120,8 @@ input[type="radio"].visually-hidden {
 .sort {
   margin: 0;
   padding: 0;
+  font-size: 13px;
+  line-height: 18px;
   background-color: #f7f3ec;
 }
 
@@ -83,7 +132,7 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .main-header {
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 .header-top {
@@ -581,76 +630,6 @@ li:last-child .navigation-item  {
   border-bottom: 5px solid #1d2739;
 }
 
-main {
-  margin-bottom: 85px;
-}
-
-/* ХЛЕБНЫЕ КРОШКИ */
-.breadcrumbs {
-  display: flex;
-  margin: 0;
-  margin-bottom: 19px;
-  padding: 0;
-
-
-  list-style: none;
-}
-
-.breadcrumbs li {
-  position: relative;
-  margin-left: 40px;
-}
-
-.breadcrumbs-home a {
-  margin: 0;
-  padding: 0;
-}
-
-.breadcrumbs li::after {
-  content: "";
-
-  position: absolute;
-  top: 2px;
-  left: -25px;
-
-  width: 9px;
-  height: 9px;
-
-  border-top: 1px solid #e3e5e9;
-  border-right: 1px solid #e3e5e9;
-  transform: rotate(45deg);
-}
-
-.breadcrumbs-home::after {
-  display: none;
-}
-
-.breadcrumbs-home::before {
-  content: "";
-
-  position: absolute;
-  top: 1px;
-  right: -8px;
-
-  width: 20px;
-  height: 20px;
-
-  background-image: url(../img/icon-home.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.breadcrumbs + h2 {
-  margin: 0;
-  margin-bottom: 19px;
-  padding: 30px 28px;
-  font-size: 30px;
-  font-family: "Cuprum", Arial, sans-serif;
-  font-weight: 400;
-  line-height: 30px;
-  color: #32425c;
-}
-
 /* ПРЕДЛОЖЕНИЯ */
 .main-offers {
   margin: 0;
@@ -998,32 +977,6 @@ main {
   background-position: 0 0;
 }
 
-.button {
-  display: inline-block;
-  font: inherit;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  vertical-align: middle;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-
-  background-color: #ee3643;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.button:hover,
-.button:focus {
-  background-color: #ca2c37;
-}
-
-.button:active {
-  background-color: #ba2732;
-}
-
 /* ПОПУЛЯРНЫЕ ТОВАРЫ */
 .popular-products-title,
 .popular-brands-title {
@@ -1054,7 +1007,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 
 .popular-products h2,
@@ -1069,6 +1021,7 @@ main {
   max-width: 218px;
   width: 100%;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   text-align: center;
   vertical-align: top;
@@ -1133,7 +1086,6 @@ main {
   width: 100%;
   margin: 3px 0;
   padding: 9px 21px 8px 24px;
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -1175,7 +1127,6 @@ main {
   width: 100%;
   margin: 5px 0;
   padding: 8px 16px 6px 23px;
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #32425c;
@@ -1260,17 +1211,14 @@ main {
 
 /* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ */
 .popular-brands {
-  margin-bottom: 85px;
+  margin-bottom: 65px;
 }
 
 .popular-brands-list a {
+  margin-bottom: 20px;
   width: 220px;
   min-height: 145px;
   border: 1px solid #eaeaea;
-}
-
-.popular-brands-list a:nth-child(-n+4) {
-  margin-bottom: 20px;
 }
 
 .popular-brands-item {
@@ -1320,17 +1268,100 @@ main {
   opacity: 0.3;
 }
 
+/* ХЛЕБНЫЕ КРОШКИ */
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-right: 20px;
+  padding-right: 23px;
+}
+
+.breadcrumbs a {
+  margin: 0;
+  padding: 0;
+  text-align: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+li.breadcrumbs-home {
+  padding-right: 35px;
+}
+
+.breadcrumbs-home a::before {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  right: 17px;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url(../img/icon-home.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.breadcrumbs li::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  right: 1px;
+
+  width: 8px;
+  height: 8px;
+
+  border-top: 1px solid #c5c9d1;
+  border-right: 1px solid #c5c9d1;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs li:last-child::after {
+  display: none;
+}
+
+.inner-page-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 30px 28px 29px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #32425c;
+}
+
 /* ФИЛЬТР */
+
+.aside-filter h3 {
+  padding: 10px 18px;
+  margin-bottom: 10px;
+}
+
 .filter-item {
   margin: 0;
   padding: 0;
-  padding-bottom: 25px;
 
   border: none;
   border-bottom: 1px solid #f6f6f6;
 }
 
+.filter-item.price {
+  margin-bottom: 15px;
+  padding-bottom: 25px;
+}
+
 .filter-item legend {
+  margin-bottom: 15px;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1339,7 +1370,6 @@ main {
 
 .filter-range {
   width: 220px;
-  margin-top: 13px;
 }
 
 .range-controls {
@@ -1420,6 +1450,7 @@ main {
   padding: 10px 10px;
 
   font-size: 17px;
+  line-height: 18px;
   text-align: center;
   color: #000000;
 
@@ -1431,38 +1462,117 @@ main {
   margin-left: 15px;
 }
 
-/* КАТАЛОГ */
-.inner-page-wrapper {
-  display: flex;
-  justify-content: space-between;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-}
-.inner-page-wrapper h3 {
-  font-size: 13px;
-  line-height: 18px;
+.brands,
+.power-supply {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 20px;
+  list-style: none;
 }
 
-.catalog-wrapper {
-  width: 700px;
+.filter-item.brand {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-.catalog {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.filter-option {
+  margin-bottom: 20px;
+  padding-left: 35px;
+}
+
+.filter-option:last-child {
+  margin-bottom: 0px;
+}
+
+.filter-option label {
+  position: relative;
+  cursor: pointer;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+
+  position: absolute;
+  top: -2px;
+  left: -35px;
+
+  width: 19px;
+  height: 19px;
+
+  border: 2px solid #000000;
+  border-radius: 2px;
+  opacity: 0.5;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: -4px;
+  left: -24px;
+
+  width: 6px;
+  height: 16px;
+  transform: rotate(45deg);
+
+  border-bottom: 4px solid #8a8a8a;
+  border-right: 4px solid #8a8a8a;
+  box-shadow: 3px -3px 3px 0 #ffffff;
+  opacity: 1;
+}
+
+.filter-item.power {
+  border: none;
+  margin-bottom: 75px;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+
+  position: absolute;
+  top: -2px;
+  left: -35px;
+
+  width: 16px;
+  height: 16px;
+
+  border: 4px solid #000000;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  left: -27px;
+
+  width: 0;
+  height: 0;
+
+  border: 4px solid #000000;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.filter-input-checkbox:disabled + label,
+.filter-input-radio:disabled + label {
+  opacity: 0.3;
+}
+
+.filter-button {
+  max-width: 140px;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
 }
 
 .sort {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-}
-
-.aside-filter h3 {
-  padding: 10px 18px;
-  margin-bottom: 12px;
 }
 
 .sort h3 {
@@ -1477,25 +1587,6 @@ main {
   width: 400px;
   margin: 0;
   padding: 0;
-}
-
-.brands,
-.power-supply {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.filter-option {
-  margin-bottom: 22px;
-}
-
-.filter-option:last-child {
-  margin-bottom: 0px;
-}
-
-.filter-option:disabled {
-  opacity: 0.4;
 }
 
 .sort-item,
@@ -1565,55 +1656,73 @@ main {
   text-decoration: none;
 }
 
+/* КАТАЛОГ */
+.inner-page-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-wrapper {
+  width: 700px;
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .pagination-list {
   display: flex;
   justify-content: flex-start;
   margin: 0;
+  margin-top: 30px;
   padding: 0;
   list-style: none;
 }
 
-.pagination-item a {
-  color: #000000;
-
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
+.pagination-button {
+  margin: 0;
+  margin-right: 10px;
+  padding: 10px 15px;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus {
-  border-color: #bdc6ca;
+.pagination-button.previous,
+.pagination-button.next {
+  padding: 10px 30px;
 }
 
-.pagination-item a:active {
-  border-color: #ee3643;
+.pagination-button.previous.disabled ,
+.pagination-button.next.disabled {
+  display: none;
 }
 
-.pagination-item-current a {
+.pagination-button.current {
   color: #ffffff;
 
   background-color: #ee3643;
   border-color: #ee3643;
 }
 
-.description {
+.background-wrapper {
+  margin-top: 57px;
+  padding: 63px 0 68px;
   font-size: 16px;
   line-height: 23px;
   color: #000000;
 }
 
-.description .container h2 {
+.description-title {
   margin: 0;
-  padding-top: 65px;
+  margin-bottom: 28px;
+  padding: 0;
   font-size: 30px;
   line-height: 30px;
-  font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
 }
 
-.description .container p {
+.description-text {
   margin: 0;
-  padding-bottom: 65px;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1866,7 +1975,7 @@ main {
 /* Подвал */
 .footer-top {
   background-color: #32425c;
-  margin-top: 80px;
+  margin-top: 85px;
   padding-bottom: 50px;
 }
 
