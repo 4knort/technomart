@@ -1214,58 +1214,31 @@ li:last-child .navigation-item  {
   margin-bottom: 65px;
 }
 
-.popular-brands-list a {
+.popular-brands-item {
   margin-bottom: 20px;
   width: 220px;
   min-height: 145px;
+  text-align: center;
+  line-height: 145px;
+
+
+  background-repeat: no-repeat;
+  background-position: center;
   border: 1px solid #eaeaea;
 }
 
-.popular-brands-item {
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.bosch {
-  background-image: url(..//img/bosch.png);
-}
-
-.makita {
-  background-image: url(..//img/makita.png);
-}
-
-.dewalt {
-  background-image: url(..//img/dewalt.png);
-}
-
-.interscol {
-  background-image: url(..//img/interscol.png);
-}
-
-.hitachi {
-  background-image: url(..//img/hitachi.png);
-}
-
-.lg {
-  background-image: url(..//img/lg.png);
-}
-
-.aeg {
-  background-image: url(..//img/aeg.png);
-}
-
-.metabo {
-  background-image: url(..//img/metabo.png);
-}
-
-.popular-brands-list a:hover,
-.popular-brands-list a:focus {
+.popular-brands-item:hover,
+.popular-brands-item:focus {
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-.popular-brands-list a:active {
+.popular-brands-item:active {
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
   opacity: 0.3;
+}
+
+.popular-brands-item img {
+  vertical-align: middle;
 }
 
 /* ХЛЕБНЫЕ КРОШКИ */
