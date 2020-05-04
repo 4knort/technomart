@@ -444,18 +444,18 @@
       <h2 class="modal-title visually-hidden">Напишите нам</h2>
       <form class="modal-form" action="index.html" method="post">
         <div class="modal-form-wrapper">
-          <p class="name">
+          <div class="name">
             <label class="label-modal" for="name">Ваше имя:</label>
             <input class="input-modal different-font" id="name" type="text" placeholder="Представьтесь, пожалуйста">
-          </p>
-          <p class="email">
+          </div>
+          <div class="email">
             <label class="label-modal" for="email">Ваш e-mail:</label>
             <input class="input-modal different-font" id="email" type="text" placeholder="Для отправки ответа">
-          </p>
-          <p class="message">
-            <label class="label-modal" for="message">Текст письма:</label>
-            <input class="input-modal different-font" id="message" type="text" placeholder="В свободной форме">
-          </p>
+          </div>
+          <div class="message">
+            <span class="label-modal">Текст письма:</span>
+            <textarea class="input-modal different-font" name="text" placeholder="В свободной форме"></textarea>
+          </div>
         </div>
         <div class="modal-button-background">
           <button class="modal-form-button button" type="submit">ОТПРАВИТЬ</button>
@@ -466,9 +466,9 @@
 
     <section class="modal modal-map">
       <h2 class="modal-title visually-hidden">Как до нас добраться</h2>
-      <p>
+      <div>
         <img src="img/map.jpg" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-      </p>
+      </div>
       <button class="modal-close" type="button"><span class="visually-hidden">ЗАКРЫТЬ</span></button>
     </section>
     <div class="modal-overlay"></div>

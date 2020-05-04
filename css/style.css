@@ -2188,7 +2188,9 @@ li.breadcrumbs-home {
   padding: 0;
 }
 
-.modal-form p {
+.modal-form .name,
+.modal-form .email,
+.modal-form .message {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -2214,6 +2216,7 @@ li.breadcrumbs-home {
 .message .input-modal {
   box-sizing: border-box;
   padding: 10px 0 85px 10px;
+  resize: none;
 }
 
 .label-modal {
@@ -2253,11 +2256,6 @@ li.breadcrumbs-home {
   transform: translate(-50%, -50%);
 }
 
-.modal-map p {
-  margin: 0;
-  padding: 0;
-}
-
 .modal-basket {
   top: 50%;
   left: 50%;
@@ -2271,10 +2269,10 @@ li.breadcrumbs-home {
 
 .modal-basket-wrapper {
   margin: 0;
-  padding: 50px 80px;
+  padding: 60px 80px;
 }
 
-.modal-basket-title::before {
+.modal-basket .modal-title::before {
   content: "";
 
   position: absolute;
