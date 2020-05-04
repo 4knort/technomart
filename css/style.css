@@ -2158,6 +2158,16 @@ li.breadcrumbs-home {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.modal-title {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 100px;
+  font-size: 30px;
+  line-height: 30px;
+}
+
 .modal-write-us {
   top: 50%;
   left: 50%;
@@ -2170,15 +2180,12 @@ li.breadcrumbs-home {
 }
 
 .modal-form-wrapper {
-  width: 460px;
-  margin: 0;
-  padding: 45px 80px 37px;
-}
-
-.modal-form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 460px;
+  margin: 45px 80px 37px;
+  padding: 0;
 }
 
 .modal-form p {
@@ -2265,16 +2272,6 @@ li.breadcrumbs-home {
 .modal-basket-wrapper {
   margin: 0;
   padding: 50px 80px;
-}
-
-.modal-basket-title {
-  position: relative;
-
-  margin: 0;
-  padding: 0;
-  padding-left: 100px;
-  font-size: 30px;
-  line-height: 30px;
 }
 
 .modal-basket-title::before {
