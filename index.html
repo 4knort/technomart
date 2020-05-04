@@ -440,33 +440,38 @@
 
     </footer>
 
-    <section class="modal modal-write-us visually-hidden">
-      <h2 class="visually-hidden">Напишите нам</h2>
-      <form class="modal-write-us" action="index.html" method="post">
-        <p>
-          <label for="name">Ваше имя:</label>
-          <input class="input-modal" id="name" type="text" placeholder="Представьтесь, пожалуйста">
-        </p>
-        <p>
-          <label for="email">Ваш e-mail:</label>
-          <input class="input-modal" id="email" type="text" placeholder="Для отправки ответа">
-        </p>
-        <p>
-          <label for="message">Текст письма</label>
-          <input class="input-modal" id="message" type="text" placeholder="В свободной форме">
-        </p>
-        <button class="button" type="submit">ОТПРАВИТЬ</button>
+    <section class="modal modal-write-us">
+      <h2 class="modal-title visually-hidden">Напишите нам</h2>
+      <form class="modal-form" action="index.html" method="post">
+        <div class="modal-form-wrapper">
+          <div class="name">
+            <label class="label-modal" for="name">Ваше имя:</label>
+            <input class="input-modal different-font" id="name" type="text" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="email">
+            <label class="label-modal" for="email">Ваш e-mail:</label>
+            <input class="input-modal different-font" id="email" type="text" placeholder="Для отправки ответа">
+          </div>
+          <div class="message">
+            <span class="label-modal">Текст письма:</span>
+            <textarea class="input-modal different-font" name="text" placeholder="В свободной форме"></textarea>
+          </div>
+        </div>
+        <div class="modal-button-background">
+          <button class="modal-form-button button" type="submit">ОТПРАВИТЬ</button>
+        </div>
       </form>
-      <button class="modal-close" type="button">ЗАКРЫТЬ</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">ЗАКРЫТЬ</span></button>
     </section>
 
-    <section class="modal modal-map visually-hidden">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <p>
-        <img src="img/map.jpg" width="970" height="476" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-      </p>
-      <button class="modal-close" type="button">ЗАКРЫТЬ</button>
+    <section class="modal modal-map">
+      <h2 class="modal-title visually-hidden">Как до нас добраться</h2>
+      <div>
+        <img src="img/map.jpg" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      </div>
+      <button class="modal-close" type="button"><span class="visually-hidden">ЗАКРЫТЬ</span></button>
     </section>
+    <div class="modal-overlay"></div>
 
   </body>
 </html>
