@@ -20,6 +20,10 @@ a {
   font-family: "PT Sans", Arial, sans-serif;
 }
 
+.different-font .actions {
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -133,7 +137,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 59px;
 }
 
-.inner-page .main-header {
+.inner-page.main-header {
   margin-bottom: 18px;
 }
 
@@ -1570,6 +1574,8 @@ li.breadcrumbs-home {
   width: 180px;
   margin: 0;
   padding: 10px 20px;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .sort-list {
@@ -2291,6 +2297,8 @@ li.breadcrumbs-home {
   width: 220px;
   margin: 0 10px;
   padding: 10px 0;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: 700;
 }
 
