@@ -478,6 +478,10 @@
 
       var writeUs = document.querySelector(".write-us");
       var modalWriteUs = document.querySelector(".modal-write-us");
+      var form = modalWriteUs.querySelector(".modal-form");
+      var login = form.querySelector(".name .input-modal");
+      var email = form.querySelector(".email .input-modal");
+      var textarea = form.querySelector(".message textarea");
       var closeWriteUs = modalWriteUs.querySelector(".modal-close");
       var map = document.querySelector(".mini-map");
       var modalMap = document.querySelector(".modal-map");
@@ -489,6 +493,15 @@
         evt.preventDefault();
         modalWriteUs.classList.add("modal-show");
         overlay.classList.add("modal-show");
+        login.focus();
+      });
+
+
+      form.addEventListener("submit", function (evt) {
+        if (!login.value || !email.value || !textarea.value) {
+          evt.preventDefault();
+          console.log("введите что-то");
+        }
       });
 
       closeWriteUs.addEventListener("click", function (evt) {
