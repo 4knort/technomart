@@ -471,7 +471,45 @@
       </div>
       <button class="modal-close" type="button"><span class="visually-hidden">ЗАКРЫТЬ</span></button>
     </section>
+
     <div class="modal-overlay"></div>
+
+    <script type="text/javascript">
+
+      var writeUs = document.querySelector(".write-us");
+      var modalWriteUs = document.querySelector(".modal-write-us");
+      var map = document.querySelector(".mini-map");
+      var modalMap = document.querySelector(".modal-map");
+      var overlay = document.querySelector(".modal-overlay");
+      var close = document.querySelector(".modal-close");
+
+      writeUs.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        modalWriteUs.classList.add("modal-show");
+        overlay.classList.add("modal-show");
+      });
+
+      map.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        modalMap.classList.add("modal-show");
+        overlay.classList.add("modal-show");
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        modalWriteUs.classList.remove("modal-show");
+        modalMap.classList.remove("modal-show");
+        overlay.classList.remove("modal-show");
+      });
+
+      overlay.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        modalWriteUs.classList.remove("modal-show");
+        modalMap.classList.remove("modal-show");
+        overlay.classList.remove("modal-show");
+      })
+
+    </script>
 
   </body>
 </html>

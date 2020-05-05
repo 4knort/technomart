@@ -2332,3 +2332,7 @@ li.breadcrumbs-home {
 .modal-close::after {
   transform: rotate(-45deg);
 }
+
+.modal-show {
+  display: block;
+}
