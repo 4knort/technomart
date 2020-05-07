@@ -474,62 +474,7 @@
 
     <div class="modal-overlay"></div>
 
-    <script type="text/javascript">
-
-      var writeUs = document.querySelector(".write-us");
-      var modalWriteUs = document.querySelector(".modal-write-us");
-      var form = modalWriteUs.querySelector(".modal-form");
-      var login = form.querySelector(".name .input-modal");
-      var email = form.querySelector(".email .input-modal");
-      var textarea = form.querySelector(".message textarea");
-      var closeWriteUs = modalWriteUs.querySelector(".modal-close");
-      var map = document.querySelector(".mini-map");
-      var modalMap = document.querySelector(".modal-map");
-      var closeMap = modalMap.querySelector(".modal-close");
-      var overlay = document.querySelector(".modal-overlay");
-
-
-      writeUs.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modalWriteUs.classList.add("modal-show");
-        overlay.classList.add("modal-show");
-        login.focus();
-      });
-
-
-      form.addEventListener("submit", function (evt) {
-        if (!login.value || !email.value || !textarea.value) {
-          evt.preventDefault();
-          console.log("введите что-то");
-        }
-      });
-
-      closeWriteUs.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modalWriteUs.classList.remove("modal-show");
-        overlay.classList.remove("modal-show");
-      });
-
-      map.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modalMap.classList.add("modal-show");
-        overlay.classList.add("modal-show");
-      });
-
-      closeMap.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modalMap.classList.remove("modal-show");
-        overlay.classList.remove("modal-show");
-      });
-
-      overlay.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modalWriteUs.classList.remove("modal-show");
-        modalMap.classList.remove("modal-show");
-        overlay.classList.remove("modal-show");
-      })
-
-    </script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>
