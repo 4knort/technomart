@@ -20,6 +20,10 @@ var overlay = document.querySelector(".modal-overlay");
 
 var sliders = document.querySelector(".offer-slider");
 var sliderItem = sliders.querySelectorAll(".slider-item");
+var slider1 = sliders.querySelector("#slider-1");
+var slider2 = sliders.querySelector("#slider-2");
+var toggle1 = sliders.querySelector("#toggle-1");
+var toggle2 = sliders.querySelector("#toggle-2");
 var sliderPrevious = sliders.querySelector(".previous");
 var sliderNext = sliders.querySelector(".next");
 
@@ -124,10 +128,16 @@ overlay.addEventListener("click", function (evt) {
 
 sliderPrevious.addEventListener("click", function (evt) {
   evt.preventDefault();
-  sliderItem.classList.toggle("current");
+  slider1.classList.add("current");
+  slider2.classList.remove("current");
+  toggle1.classList.add("active");
+  toggle2.classList.remove("active");
 });
 
 sliderNext.addEventListener("click", function (evt) {
   evt.preventDefault();
-  sliderItem.classList.toggle("current");
+  slider2.classList.add("current");
+  slider1.classList.remove("current");
+  toggle2.classList.add("active");
+  toggle1.classList.remove("active");
 });
