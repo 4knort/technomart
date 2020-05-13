@@ -853,7 +853,7 @@ li:last-child .navigation-item  {
   display: none;
 }
 
-.slider-item:nth-child(2) {
+.slider-item.current {
   display: block;
 }
 
@@ -2344,14 +2344,14 @@ li.breadcrumbs-home {
   animation-duration: 0.5s;
 }
 
-@keyframes shakes {
+@keyframes shake {
   0%, 100% {transform: translate(-50%, -50%) rotate(0);}
   20%, 60% {transform: translate(-50%, -50%) rotate(5deg);}
   40%, 80% {transform: translate(-50%, -50%) rotate(-5deg);}
 }
 
 .modal-error {
-  animation-name: shakes;
+  animation-name: shake;
   animation-duration: 0.5s;
 }
 

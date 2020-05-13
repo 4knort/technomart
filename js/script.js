@@ -5,13 +5,23 @@ var login = form.querySelector(".name .input-modal");
 var email = form.querySelector(".email .input-modal");
 var textarea = form.querySelector(".message textarea");
 var closeWriteUs = modalWriteUs.querySelector(".modal-close");
+
 var map = document.querySelector(".mini-map");
 var modalMap = document.querySelector(".modal-map");
 var closeMap = modalMap.querySelector(".modal-close");
-var buy = document.querySelector(".actions .buy");
+
+var products = document.querySelector(".catalog-product")
+var buy = document.querySelector(".buy");
+var continueShopping = document.querySelector(".button-continue-shopping");
 var modalBasket = document.querySelector(".modal-basket");
 var closeBasket = modalBasket.querySelector(".modal-close");
+
 var overlay = document.querySelector(".modal-overlay");
+
+var sliders = document.querySelector(".offer-slider");
+var sliderItem = sliders.querySelectorAll(".slider-item");
+var sliderPrevious = sliders.querySelector(".previous");
+var sliderNext = sliders.querySelector(".next");
 
 var isStorageSupport = true;
 var storage = "";
@@ -86,13 +96,6 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-overlay.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modalWriteUs.classList.remove("modal-show");
-  modalMap.classList.remove("modal-show");
-  overlay.classList.remove("overlay-display");
-});
-
 buy.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalBasket.classList.add("modal-show");
@@ -103,4 +106,28 @@ closeBasket.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalBasket.classList.remove("modal-show");
   overlay.classList.remove("overlay-display");
+});
+
+continueShopping.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modalBasket.classList.remove("modal-show");
+  overlay.classList.remove("overlay-display");
+});
+
+overlay.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modalWriteUs.classList.remove("modal-show");
+  modalMap.classList.remove("modal-show");
+  modalBasket.classList.remove("modal-show");
+  overlay.classList.remove("overlay-display");
+});
+
+sliderPrevious.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  sliderItem.classList.toggle("current");
+});
+
+sliderNext.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  sliderItem.classList.toggle("current");
 });
