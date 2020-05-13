@@ -27,6 +27,14 @@ var toggle2 = sliders.querySelector("#toggle-2");
 var sliderPrevious = sliders.querySelector(".previous");
 var sliderNext = sliders.querySelector(".next");
 
+var services = document.querySelector(".services-list");
+var delivery = services.querySelector(".services-delivery");
+var guarantee = services.querySelector(".services-guarantee");
+var credit = services.querySelector(".services-credit");
+var deliveryDescription = services.querySelector(".services-info.delivery");
+var guaranteeDescription = services.querySelector(".services-info.guarantee");
+var creditDescription = services.querySelector(".services-info.credit");
+
 var isStorageSupport = true;
 var storage = "";
 
@@ -126,6 +134,7 @@ overlay.addEventListener("click", function (evt) {
   overlay.classList.remove("overlay-display");
 });
 
+// Слайдер
 sliderPrevious.addEventListener("click", function (evt) {
   evt.preventDefault();
   slider1.classList.add("current");
@@ -156,4 +165,35 @@ toggle2.addEventListener("click", function (evt) {
   slider1.classList.remove("current");
   toggle2.classList.add("active");
   toggle1.classList.remove("active");
+});
+
+// Сервисы
+delivery.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  delivery.classList.add("current");
+  deliveryDescription.classList.add("current");
+  guarantee.classList.remove("current");
+  guaranteeDescription.classList.remove("current");
+  credit.classList.remove("current");
+  creditDescription.classList.remove("current");
+});
+
+guarantee.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  delivery.classList.remove("current");
+  deliveryDescription.classList.remove("current");
+  guarantee.classList.add("current");
+  guaranteeDescription.classList.add("current");
+  credit.classList.remove("current");
+  creditDescription.classList.remove("current");
+});
+
+credit.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  delivery.classList.remove("current");
+  deliveryDescription.classList.remove("current");
+  guarantee.classList.remove("current");
+  guaranteeDescription.classList.remove("current");
+  credit.classList.add("current");
+  creditDescription.classList.add("current");
 });
