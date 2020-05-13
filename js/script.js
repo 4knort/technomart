@@ -141,3 +141,19 @@ sliderNext.addEventListener("click", function (evt) {
   toggle2.classList.add("active");
   toggle1.classList.remove("active");
 });
+
+toggle1.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  slider1.classList.add("current");
+  slider2.classList.remove("current");
+  toggle1.classList.add("active");
+  toggle2.classList.remove("active");
+});
+
+toggle2.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  slider2.classList.add("current");
+  slider1.classList.remove("current");
+  toggle2.classList.add("active");
+  toggle1.classList.remove("active");
+});
