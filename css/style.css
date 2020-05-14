@@ -853,7 +853,7 @@ li:last-child .navigation-item  {
   display: none;
 }
 
-.slider-item:nth-child(2) {
+.slider-item.current {
   display: block;
 }
 
@@ -1787,7 +1787,9 @@ li.breadcrumbs-home {
   border: none;
 }
 
-.services-button  .current {
+.services-button  .current,
+.services-button .current:hover,
+.services-button .current:focus {
   color: #32425c;
 
   background-color: #ffffff;
@@ -2331,4 +2333,30 @@ li.breadcrumbs-home {
 
 .modal-close::after {
   transform: rotate(-45deg);
+}
+
+@keyframes leaves {
+  0% {transform: translate(100%, 100%);}
+  100% {transform: translate(-50%, -50%);}
+}
+
+.modal-show {
+  display: block;
+  animation-name: leaves;
+  animation-duration: 0.5s;
+}
+
+.overlay-display {
+  display: block;
+}
+
+@keyframes shake {
+  0%, 100% {transform: translate(-50%, -50%) rotate(0);}
+  20%, 60% {transform: translate(-50%, -50%) rotate(5deg);}
+  40%, 80% {transform: translate(-50%, -50%) rotate(-5deg);}
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.5s;
 }
