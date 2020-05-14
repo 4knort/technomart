@@ -1787,7 +1787,9 @@ li.breadcrumbs-home {
   border: none;
 }
 
-.services-button  .current {
+.services-button  .current,
+.services-button .current:hover,
+.services-button .current:focus {
   color: #32425c;
 
   background-color: #ffffff;
@@ -2344,6 +2346,10 @@ li.breadcrumbs-home {
   animation-duration: 0.5s;
 }
 
+.overlay-display {
+  display: block;
+}
+
 @keyframes shake {
   0%, 100% {transform: translate(-50%, -50%) rotate(0);}
   20%, 60% {transform: translate(-50%, -50%) rotate(5deg);}
@@ -2353,8 +2359,4 @@ li.breadcrumbs-home {
 .modal-error {
   animation-name: shake;
   animation-duration: 0.5s;
-}
-
-.overlay-display {
-  display: block;
 }

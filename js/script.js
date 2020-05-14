@@ -10,11 +10,11 @@ var map = document.querySelector(".mini-map");
 var modalMap = document.querySelector(".modal-map");
 var closeMap = modalMap.querySelector(".modal-close");
 
-var products = document.querySelector(".catalog-product")
-var buy = document.querySelector(".buy");
-var continueShopping = document.querySelector(".button-continue-shopping");
-var modalBasket = document.querySelector(".modal-basket");
-var closeBasket = modalBasket.querySelector(".modal-close");
+// var products = document.querySelector(".catalog-product")
+// var buy = products.querySelectorAll(".buy");
+// var continueShopping = document.querySelector(".button-continue-shopping");
+// var modalBasket = document.querySelector(".modal-basket");
+// var closeBasket = modalBasket.querySelector(".modal-close");
 
 var overlay = document.querySelector(".modal-overlay");
 
@@ -60,6 +60,8 @@ writeUs.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
   if (!login.value || !email.value || !textarea.value) {
     evt.preventDefault();
+    modalWriteUs.classList.remove("modal-error");
+    modalWriteUs.offsetWidth = modalWriteUs.offsetWidth;
     modalWriteUs.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
@@ -77,8 +79,8 @@ closeWriteUs.addEventListener("click", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
+    evt.preventDefault();
     if (modalWriteUs.classList.contains("modal-show")) {
-      evt.preventDefault();
       modalWriteUs.classList.remove("modal-show");
       modalWriteUs.classList.remove("modal-error");
       overlay.classList.remove("overlay-display");
@@ -92,12 +94,6 @@ map.addEventListener("click", function (evt) {
   overlay.classList.add("overlay-display");
 });
 
-closeMap.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modalMap.classList.remove("modal-show");
-  overlay.classList.remove("overlay-display");
-});
-
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
@@ -108,29 +104,39 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-buy.addEventListener("click", function (evt) {
+closeMap.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modalBasket.classList.add("modal-show");
-  overlay.classList.add("overlay-display");
-});
-
-closeBasket.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modalBasket.classList.remove("modal-show");
+  modalMap.classList.remove("modal-show");
   overlay.classList.remove("overlay-display");
 });
 
-continueShopping.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modalBasket.classList.remove("modal-show");
-  overlay.classList.remove("overlay-display");
-});
+// Карточка товара
+// for (var i = 0; i < 100; i ++) {
+//   buy.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     modalBasket.classList.add("modal-show");
+//     overlay.classList.add("overlay-display");
+//   });
+// }
+//
+// closeBasket.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   modalBasket.classList.remove("modal-show");
+//   overlay.classList.remove("overlay-display");
+// });
+//
+// continueShopping.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   modalBasket.classList.remove("modal-show");
+//   overlay.classList.remove("overlay-display");
+// });
 
 overlay.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalWriteUs.classList.remove("modal-show");
+  modalWriteUs.classList.remove("modal-error");
   modalMap.classList.remove("modal-show");
-  modalBasket.classList.remove("modal-show");
+  // modalBasket.classList.remove("modal-show");
   overlay.classList.remove("overlay-display");
 });
 
